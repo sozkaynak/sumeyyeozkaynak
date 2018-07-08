@@ -1,7 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f06a719c-4c61-4a6d-8228-6ac4e306b03e" name="Default" comment="" />
+    <list default="true" id="f06a719c-4c61-4a6d-8228-6ac4e306b03e" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/lavish-bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/main.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/style.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/243x180.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/blog.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/blog2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/cicek.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/cicek2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/cicek3.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/dal.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/header.jpeg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/homepage/hangman.io" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/homepage/header-illustration.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/homepage/industrial_engineering.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/homepage/machin_learning.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/homepage/main-qimg-05ebb50ea1423101c1fac66e40eee96e.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-flower.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/index.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/logoweb.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/myworkandresearch.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/weblogo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/weblogo.psd" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/work.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/yaprak.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/customscripts.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/prism.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/sidebar_toogle.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/tabs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/staticfiles/css/lavish-bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/staticfiles/css/main.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/base.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/myworkandresearch/category.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/myworkandresearch/detail.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/myworkandresearch/myworkandresearch.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/myworkandresearch/subject.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/sumeyyeozkaynak/settings.py" afterPath="$PROJECT_DIR$/sumeyyeozkaynak/settings.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,18 +58,38 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myworkandresearch/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="357">
               <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sumeyyeozkaynak/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" column="109" lean-forward="false" selection-start-line="4" selection-start-column="109" selection-end-line="4" selection-end-column="109" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sumeyyeozkaynak/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="58" column="54" lean-forward="false" selection-start-line="58" selection-start-column="54" selection-end-line="58" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -53,10 +114,12 @@
       <replace>Post</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sumeyyeozkaynak/settings.py" />
         <option value="$PROJECT_DIR$/myworkandresearch/models.py" />
         <option value="$PROJECT_DIR$/sumeyyeozkaynak/urls.py" />
         <option value="$PROJECT_DIR$/myworkandresearch/urls.py" />
@@ -67,6 +130,7 @@
         <option value="$PROJECT_DIR$/blog/admin.py" />
         <option value="$PROJECT_DIR$/myworkandresearch/admin.py" />
         <option value="$PROJECT_DIR$/sumeyyeozkaynak/views.py" />
+        <option value="$PROJECT_DIR$/sumeyyeozkaynak/settings.py" />
       </list>
     </option>
   </component>
@@ -76,9 +140,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="641" />
-    <option name="width" value="732" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="676" />
+    <option name="width" value="697" />
     <option name="height" value="775" />
   </component>
   <component name="ProjectView">
@@ -96,35 +160,35 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="sumeyyeozkaynak" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sumeyyeozkaynak" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="sumeyyeozkaynak" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sumeyyeozkaynak" type="462c0819:PsiDirectoryNode" />
-              <item name="myworkandresearch" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sumeyyeozkaynak" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sumeyyeozkaynak" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
               <item name="sumeyyeozkaynak" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dp-sumeyyeozkaynak" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Win\Desktop\Python&amp;Django Projects\website" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -179,21 +243,21 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="676" y="0" width="697" height="775" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28548643" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26923078" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2880259" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.324493" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -216,6 +280,22 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/myworkandresearch/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sumeyyeozkaynak/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="109" lean-forward="false" selection-start-line="4" selection-start-column="109" selection-end-line="4" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/myworkandresearch/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -298,14 +378,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sumeyyeozkaynak/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="40" column="11" lean-forward="false" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -413,7 +485,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myworkandresearch/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="357">
           <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
           <folding />
         </state>
@@ -423,6 +495,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="109" lean-forward="false" selection-start-line="4" selection-start-column="109" selection-end-line="4" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sumeyyeozkaynak/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="58" column="54" lean-forward="false" selection-start-line="58" selection-start-column="54" selection-end-line="58" selection-end-column="54" />
           <folding />
         </state>
       </provider>

@@ -1,0 +1,65 @@
+body {
+    margin: 0 0;
+    background-color: #c7bfacff;
+}
+
+#nav{
+    background-color: black;
+    width: 100%;
+    height: 10%;
+}
+
+#header {
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    padding: 5% 10% 0 10%;
+    margin: center;
+}
+    #header container {
+    border-radius: 12px;
+    width: 100%;
+    height: 200px;
+    margin: center;
+    text-align: center;
+}
+    p.blog{
+    font-family: 'EB Garamond', serif;
+    font-size:18px;
+    color: #607D8B;
+    font-style: bold;
+    
+    margin-bottom: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+    h1.baslik {
+    font-family: 'Bellefair', serif;
+    font-size: 60px;
+    box-shadow: inset 0 -35px 0 #FFFC7F;
+    text-transform: uppercase;
+    text-align: center;
+}
+    p.bio{
+    text-align: center;
+    width: 50px;
+    color:dimgrey;
+    font-size: 16px;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 3px;   
+}
+
+#slider, #container {
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    padding: 2% 10%;
+    margin: center;
+}
+
+
+
+
+
+

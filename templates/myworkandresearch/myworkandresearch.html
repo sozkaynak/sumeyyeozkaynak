@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body_name %} class="homepage" {% endblock %}
+
+{% block header %}
+             <a class="page-link" href="https://medium.com/@sumozkaynak">Medium</a>
+             <a class="page-link" href="https://github.com/sozkaynak">GitHub</a>
+{% endblock %}
+
+{% block content %}
+
+    <!-- Page Content -->
+    <div class="container-fluid contents">
+      <!-- Content Row -->
+      <div class="row">
+        <!-- Homepage Content Column -->
+      <div class="col-sm-12 main-contents">
+          <div class="main-contents-body">
+            <article class="post-content">
+              <div class="homepage__illustration">
+                <h1 class="homepage__illustration--text">
+                    <span>      My Work & Research</span>
+                    &nbsp;
+                    <!--<a href="https://medium.com/@sumozkaynak">Learn More</a>-->
+                </h1>
+                <img src="{% static 'images/homepage/machin_learning.png' %}" class="homepage__illustration--image" alt="introduction to machine learning" />
+              </div>
+    {% for category in categories %}
+                <section class="homepage__key_points card">
+                <h1 class="homepage__title">
+       {{category.name}}
+                </h1>
+                <div class="homepage__tagline">
+       {{category.statement|linebreaksbr}}
+                </div>
+                <div class="homepage__button_row">
+
+                <a href="{% url 'myworkandresearch:category' category_slug=category.slug %}"  class="get-started-button">BAŞLA!</a> <!-- URL ekle -->
+                </div>
+                <div class="key-points">
+                    {% for subject in category.subject_set.all %}
+                            <div class="homepage__key_point">
+                                <div class="homepage__key_point_title">{{subject.name}}</div>
+                                <p>{{subject.statement}}</p>
+                            </div>
+                    {% endfor %}
+                </div>
+
+                </section>
+    {% endfor %}
+
+            </article>
+
+          </div>
+        </div> </div> <!-- /.row -->
+    </div> <!-- /.container -->
+{% endblock %}
+
+{% block footer %}
+            <footer class="site-footer">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="logo">
+                      <img src="{% static 'images/logoweb.png' %}" alt="Logo" width="100" height="100">
+                    </div>
+                      <p class="site-footer__link-list">
+                        <a href="https://medium.com/@sumozkaynak">Medium@</a> &bull;
+                        <a href="https://github.com/sozkaynak/">github</a> &bull;
+                        <a href="https://twitter.com/sumeyyeozkaynak">twitter</a> &bull;
+                        <a href="https://instagram.com/afafet">instagram</a>
+                      </p>
+
+                      <p class="licenses">
+                         FATIR/28- “Allah’tan,kulları arasında ancak bilginler korkar.” <br>
+                         “İlim elde etmek her Müslüman kadına ve erkeğe farzdır.”
+                      </p>
+                  </div>
+                </div>
+              </div>
+            </footer>
+{% endblock %}

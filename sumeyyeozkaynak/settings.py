@@ -56,7 +56,7 @@ ROOT_URLCONF = 'sumeyyeozkaynak.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -119,4 +119,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.11/howto/static-files/
+
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+
+]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')# extra bir klasöre daha bakmasını söylemek için/ static klasörünü belirtiyoruz
+
+#CKEDITOR_JQUERY_URL= 'https://ajax.googleapix.com/ajax/libs/jquery/2.2.4/jquery.min.js'
