@@ -6,31 +6,16 @@ from django.urls import reverse
     # Modeller arasında sadece OneToOne ilişkisi kurulmuştur.
        # There is only one One To Onerelationship between the models.
 
-class Category(models.Model):
+class Topic(models.Model):
     name = models.CharField(max_length=200, verbose_name='Kategori Adı')
-    statement = models.TextField(max_length=200, verbose_name='Kategori Açıklaması')
-    text=models.TextField(verbose_name='Kategori Metni')
     slug = models.SlugField(max_length=200, verbose_name='Kategori Url')
 
     def __str__(self):
         return self.name
 
-class Subject(models.Model):
-    name = models.CharField(max_length=200, verbose_name='Konu Adı')
-    statement = models.TextField(max_length=100, verbose_name='Konu Açıklaması')
-    text = models.TextField(verbose_name='Konu Metni')
-    slug = models.SlugField(max_length=200, verbose_name='Konu Url')
-
-    category_name = models.ForeignKey('Category', on_delete=models.CASCADE, verbose_name='Kategori Adı')
-
-    def __str__(self):
-        return self.name
-
-    def get_absolute_url(self):
-        return reverse('blog:subject', args=[self.slug, self.category_name.slug])
 
 class Post(models.Model):
-    author = models.ForeignKey('auth.User', on_delete=models.CASCADE, verbose_name='Yazar')
+    author = models.ForeignKey('auth.User', on_delete=models.CASCADE, verbose_name='Yazar', related_name='+')
     title = models.CharField(max_length=200, verbose_name='Başlık')
     slug = models.SlugField(max_length=200, verbose_name='Yazı Url')
     text = models.TextField()
@@ -38,7 +23,7 @@ class Post(models.Model):
         default=timezone.now)
     published_date = models.DateTimeField(
         blank=True, null=True)
-    subject_name = models.ForeignKey('Subject', on_delete=models.CASCADE)
+    topic_name = models.ForeignKey('Topic', on_delete=models.CASCADE,  default='SOME STRING')
 
     def publish(self):
         self.published_date = timezone.now()
@@ -48,4 +33,4 @@ class Post(models.Model):
         return self.title
 
     def get_absolute_url(self):
-         return reverse('nlog:detail', args=[self.slug, self.subject_name.slug, self.subject_name.category_name.slug])
+        return reverse('blog:post', args=[self.slug, self.topic_name.slug])

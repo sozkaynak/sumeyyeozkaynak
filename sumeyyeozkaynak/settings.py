@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'myworkandresearch',
     'blog',
+
 ]
 
 MIDDLEWARE = [
@@ -57,6 +58,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'templates')],
+
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -79,6 +81,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+
     }
 }
 
@@ -123,10 +126,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"),]
 
-]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')# extra bir klasöre daha bakmasını söylemek için/ static klasörünü belirtiyoruz
 
 #CKEDITOR_JQUERY_URL= 'https://ajax.googleapix.com/ajax/libs/jquery/2.2.4/jquery.min.js'

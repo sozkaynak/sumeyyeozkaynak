@@ -9,7 +9,7 @@ from django.urls import reverse
 class Category(models.Model):
     name = models.CharField(max_length=200, verbose_name='Kategori Adı')
     statement = models.TextField(max_length=200, verbose_name='Kategori Açıklaması')
-    text=models.TextField(verbose_name='Kategori Metni')
+    text = models.TextField(verbose_name='Kategori Metni')
     slug = models.SlugField(max_length=200, verbose_name='Kategori Url')
 
     def __str__(self):
@@ -30,7 +30,7 @@ class Subject(models.Model):
         return reverse('myworkandresearch:subject', args=[self.slug, self.category_name.slug])
 
 class Article(models.Model):
-    author = models.ForeignKey('auth.User', on_delete=models.CASCADE, verbose_name='Yazar')
+
     title = models.CharField(max_length=200, verbose_name='Başlık')
     slug = models.SlugField(max_length=200, verbose_name='Yazı Url')
     text = models.TextField()

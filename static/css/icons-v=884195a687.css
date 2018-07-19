@@ -1,0 +1,8 @@
+/*
+ * FontAwesome
+ * ------------
+ * Website : fontawesome.io
+ * Repo    : github.com/FortAwesome/Font-Awesome
+ * License : SIL
+ */
+@font-face{font-family:'fontawesome-webfont';font-weight:normal;font-style:normal;src:url('../fonts/fontawesome-webfont-kb2i0o.ttf') format('truetype'),url('../fonts/fontawesome-webfont-kb2i0o.woff') format('woff'),url('../fonts/fontawesome-webfont-kb2i0o.svg#fontawesome-webfont') format('svg')}i{font-family:'fontawesome-webfont'!important;font-weight:normal;font-style:normal;font-variant:normal;line-height:1;text-transform:none;speak:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa{font:normal normal normal 14px/1 'fontawesome-webfont';font-size:inherit;display:inline-block;transform:translate(0,0);text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.snapchat:before{content:'\e903'}.reddit:before{content:'\e904'}.vimeo:before{content:'\e905'}.medium:before{content:'\e906'}.pinterest:before{content:'\e907'}.twitch:before{content:'\e908'}.soundcloud:before{content:'\e909'}.behance:before{content:'\e90a'}.slack:before{content:'\e90b'}.vk:before{content:'\e90c'}.dribbble:before{content:'\e90d'}.arrow-right:before{content:'\e902'}.arrow-left:before{content:'\e919'}.tumblr:before{content:'\e910'}.youtube:before{content:'\e911'}.linkedin:before{content:'\e912'}.instagram:before{content:'\e913'}.google-plus:before{content:'\e914'}.feed:before{content:'\e915'}.github:before{content:'\e916'}.twitter:before{content:'\e917'}.facebook:before{content:'\e918'}.bitbucket:before{content:'\e901'}.menu:before{content:'\e900'}.link:before{content:'\e9cb'}.flickr:before{content:'\eaa4'}

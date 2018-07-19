@@ -4,53 +4,39 @@ from django.shortcuts import render
 from django.shortcuts import render, get_object_or_404
 from django.template import loader, context
 from django.urls import reverse
-from .models import Category, Subject, Post
+from .models import Topic, Post
 
 
 # Create your views here.
 def blog(request):
-    categories = Category.objects.all()
-    subjects = Subject.objects.all()
+    topics = Topic.objects.all()
+    posts = Post.objects.all()
     context={
-        'categories': categories,
-
-        'subjects':subjects,
+        'topics': topics,
+        'posts':posts,
     }
     return render(request, 'blog/blog.html', context)
 
-def category(request,category_slug):
-    categories= Category.objects.filter(slug=category_slug)
-    subjects=Subject.objects.all()
-    category = get_object_or_404(Category, slug=category_slug)
+def topic(request,topic_slug):
+    topic= Topic.objects.filter(slug=topic_slug)
     posts=Post.objects.all()
+    post = get_object_or_404(Post, slug=post_slug)
+    topics=Post.objects.all()
     context = {
-        'categories': categories,
-        'category':category,
-        'subjects':subjects,
-        'Posts':posts
+        'topics': topics,
+        'topic':topic,
+        'posts':posts,
+        'post':post
     }
-    return render(request, 'blog/category.html', context)
+    return render(request, 'blog/topic.html', context)
 
-def subject(request,category_slug,subject_slug):
-    categories = Category.objects.filter(slug=category_slug)
-    subjects = Subject.objects.all()
-    subject = get_object_or_404(Subject, slug=subject_slug)
-    posts = Post.objects.all()
-    context = {
-        'categories': categories,
-        'subjects': subjects,
-        'subject':subject,
-        'posts': posts
-    }
-    return render(request, 'blog/subject.html', context)
 
-def detail(request,category_slug,subject_slug,Post_slug):
-    categories = Category.objects.filter(slug=category_slug)
-    subjects = Subject.objects.filter(slug=subject_slug)
-    posts = get_object_or_404(Post, slug=Post_slug)
+
+def post(request,topic_slug,post_slug):
+    topic = Topic.objects.filter(slug=topic_slug)
+    post= get_object_or_404(Post, slug=post_slug)
     context = {
-        'categories': categories,
-        'subjects': subjects,
-        'posts': posts
+        'topic': topic,
+        'post': post
     }
-    return render(request, 'blog/detail.html', context)
+    return render(request, 'blog/post.html', context)
