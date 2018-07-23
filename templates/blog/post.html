@@ -6,12 +6,12 @@
 
 {% block content %}
         <div class="post-wrap">
-            <div class="post-featured-image" style="background-image: url('https://images.unsplash.com/photo-1482958993235-b0e8ee313b9c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=3e71a87bde702edc0ddc5c74e2c37d2b')"></div>
+            <div class="post-featured-image" style="background-image: url('{{ post.image.url }}')"></div>
             <div class="post-content-wrap">
                 <div class="post-header">
                     <h1 class="post-title">{{ post.title }}</h1>
                     <div class="item-meta post">
-                            <a href="" class="author-image item-image" style="background-image: url('../content/images/2017/11/sung-wang-209324.jpg')"></a>
+                            <a href="" class="author-image item-image" style="background-image: url('{% static 'images/user-photo.png' %}')"></a>
                             <a href="">{{ post.user }}</a> tarafından yazıldı
                             <br>
                         <time datetime="{{ post.published_date }}"> {{ post.published_date}}</time>
@@ -23,16 +23,7 @@
                     </div>
                     <div class="post-meta">
                         <div class="left">
-                            <div class="post-share">
-                                <a href="https://twitter.com/intent/tweet?text=The%20details%20are%20not%20the%20details&amp;url=http:/sente.fueko.net/the-details-are-not-the-details/"
-                                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="twitter"></i>
-                                </a>
-                                <a href="https://www.facebook.com/sharer/sharer.php?u=http:/sente.fueko.net/the-details-are-not-the-details/"
-                                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="facebook"></i>
-                                </a>
-                                <a href="https://plus.google.com/share?url=http:/sente.fueko.net/the-details-are-not-the-details/"
-                                onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"><i class="google-plus"></i></a>
-                            </div>
+
                         </div>
 
                         <!--<div class="right">

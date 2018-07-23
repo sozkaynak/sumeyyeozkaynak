@@ -5,22 +5,20 @@
 
     <div class="featured-wrap">
         <div class="featured-image-wrap">
-            <div class="featured-image" style="background-image: url('https://images.unsplash.com/photo-1501983580222-e073379fe976?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=5c39e4618a773a6c257cf9336b1a8f02')"></div>
+            <div class="featured-image" style="background-image: url('{%  static 'images/IMG_20170625_164118-01.jpeg' %}');margin-left: 20px; width: 700px;height: 400px"></div>
         </div>
         <article class="featured-post-wrap">
-            <div class="featured-post-label rotate">öne Çıkan</div>
-
-            {% if post_last %}
-                <h2><a href="{{ post_last.get_absolute_url }}">{{ post_last.title }}</a></h2>
-                <div class="item-meta post">
-                    <a href="author/patricia/index.html" class="author-image item-image" style="background-image: url('content/images/2017/11/averie-woodard-181273.jpg')"></a>
-                    <a href="">{{ post_last.author }}</a>
-                    <br>
-                    <time datetime="2017-02-05"> Yayınlanma tarihi {{ post_last.published_date}}</time>
-                </div>
-            {% endif %}
-
-            <div class="featured-list">
+        {% if post_last %}
+            <div class="featured-post-label rotate">En Son</div>
+            <h2><a href="{{ post_last.get_absolute_url }}">{{ post_last.title }}</a></h2>
+            <div class="item-meta post">
+                <a href="" class="author-image item-image" style="background-image: url('{% static 'images/user-photo.png' %}')"></a>
+                <a href="">{{ post_last.author }}</a>
+                <br>
+                <time datetime="2017-02-05"> Yayınlanma tarihi {{ post_last.published_date}}</time>
+            </div>
+        {% endif %}
+         <div class="featured-list">
 
                 <div class="featured-list-label rotate">Daha Fazla</div>
 
@@ -43,9 +41,11 @@
                     <div class="item-container first">
                         <div class="item-container-img">
                                 <div class="appear-img">
-                                    <a class="item-image" href="if-you-do-it-right-it-will-last-forever/index.html">
-                                        <img src="https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;s=9a4efd74e24cc3378bad17d3659db7a5" alt="If you do it right, it will last forever">
+                                    {% if post_six.image %}
+                                    <a class="item-image" href="{{ post_six.get_absolute_url }}">
+                                        <img src="{{ post_six.image.url }}" alt="{{ post_six.title }}">
                                     </a>
+                                    {% endif %}
                                 </div>
                         </div>
                         <header class="item-description">
@@ -54,7 +54,7 @@
                                 <p>{{ post_six.text|safe|truncatewords:25 }}</p>
                             </div>
                             <div class="item-meta">
-                                    <a href="" class="author-image item-image" style="background-image: url('content/images/2017/11/sung-wang-209324.jpg')"></a>
+                                    <a href="" class="author-image item-image" style="background-image: url('{% static 'images/user-photo.png' %}')"></a>
                                     <a href="">{{ post_six.user }}</a> tarafından yazıldı
                                     <br>
                                     <time datetime="{{ post_six.published_date }}"> {{ post_six.published_date| timesince }} önce</time>
@@ -73,7 +73,7 @@
                                     <p>{{ post_five.text|safe|truncatewords:25 }}</p>
                                 </div>
                                 <div class="item-meta">
-                                    <a href="" class="author-image item-image" style="background-image: url('content/images/2017/11/peter-sjo-201640.jpg')"></a>
+                                    <a href="" class="author-image item-image" style="background-image: url('{% static 'images/user-photo.png' %}')"></a>
                                     <a href="">{{ post_five.user }}</a>  tarafından yazıldı
                                     <br>
                                     <time datetime="{{ post_five.published_date }}"> {{ post_five.published_date|timesince }} önce</time>
@@ -87,9 +87,11 @@
                     <div class="item-container">
                         <div class="item-container-img">
                             <div class="appear-img">
-                                <a class="item-image" href="photography-monographs-and-exhibition-catalogs/index.html">
-                                        <img src="https://images.unsplash.com/photo-1458240598330-ccda17524e5c?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;s=e1139e7a218d5b82ed0154048e044475" alt="Photography monographs and exhibition catalogs">
+                                {% if post_four.image %}
+                                    <a class="item-image" href="{{post_four.get_absolute_url }}">
+                                        <img src="{{ post_four.image.url }}" alt="{{ post_four.title }}">
                                     </a>
+                                {% endif %}
                             </div>
                         </div>
                         <header class="item-description">
@@ -98,7 +100,7 @@
                                     <p>{{ post_four.text|safe|truncatewords:25 }}</p>
                                 </div>
                                 <div class="item-meta">
-                                    <a href="" class="author-image item-image" style="background-image: url('content/images/2017/11/allef-vinicius-167640.jpg')"></a>
+                                    <a href="" class="author-image item-image" style="background-image: url('{% static 'images/user-photo.png' %}')"></a>
                                     <a href="">{{ post_four.user }} </a> tarafından yazıldı
                                     <br>
                                     <time datetime="{{ post_four.published_date|timesince }}"> {{ post_four.published_date |timesince }} önce</time>
@@ -112,9 +114,11 @@
                     <div class="item-container">
                         <div class="item-container-img">
                                 <div class="appear-img">
-                                    <a class="item-image" href="less-is-more-work/index.html">
-                                        <img src="https://images.unsplash.com/photo-1476630789082-d055dc81447c?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;s=6f76496ae64a49fe0d7b6b99a299e911" alt="Less is more work">
+                                    {% if post_three.image %}
+                                    <a class="item-image" href="{{post_three.get_absolute_url }}">
+                                        <img src="{{ post_three.image.url }}" alt="{{ post_three.title }}">
                                     </a>
+                                {% endif %}
                                 </div>
                             </div>
                         <header class="item-description">
@@ -123,7 +127,7 @@
                                     <p> {{ post_three.text| safe | truncatewords:25 }}</p>
                                 </div>
                                 <div class="item-meta">
-                                    <a href="" class="author-image item-image" style="background-image: url('content/images/2017/11/sung-wang-209324.jpg')"></a>
+                                    <a href="" class="author-image item-image" style="background-image: url('{% static 'images/user-photo.png' %}')"></a>
                                     <a href="">{{ post_three.user }} tarafından yazıldı
                                     <br>
                                     <time datetime="{{ post_three.published_date}}"> {{ post_three.published_date|timesince }} önce</time>
@@ -141,7 +145,7 @@
                                     <p>{{post_two.text|safe|truncatewords:25 }}</p>
                                 </div>
                                 <div class="item-meta">
-                                    <a href="" class="author-image item-image" style="background-image: url('content/images/2017/11/hosien-azour-447571.jpg')"></a>
+                                    <a href="" class="author-image item-image" style="background-image: url('{% static 'images/user-photo.png' %}')"></a>
                                     <a href="">{{ post_two.user }}</a> tarafından yazıldı
                                     <br>
                                     <time datetime="{{ post_two.published_date }}"> {{ post_two.published_date|timesince }} önce</time>
@@ -155,9 +159,11 @@
                     <div class="item-container last">
                         <div class="item-container-img">
                                 <div class="appear-img">
-                                    <a class="item-image" href="the-details-are-not-the-details-they-make-the-design/index.html">
-                                        <img src="https://images.unsplash.com/photo-1501983580222-e073379fe976?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;s=5c39e4618a773a6c257cf9336b1a8f02" alt="The details are not the details, they make the design">
+                                    {% if post_one.image %}
+                                    <a class="item-image" href="{{post_one.get_absolute_url }}">
+                                        <img src="{{ post_one.image.url }}" alt="{{ post_one.title }}">
                                     </a>
+                                {% endif %}
                                 </div>
                             </div>
                         <header class="item-description">
@@ -166,7 +172,7 @@
                                     <p>{{ post_one.text|safe|truncatewords:25 }}</p>
                                 </div>
                                 <div class="item-meta">
-                                    <a href="" class="author-image item-image" style="background-image: url('content/images/2017/11/averie-woodard-181273.jpg')"></a>
+                                    <a href="" class="author-image item-image" style="background-image: url('{% static 'images/user-photo.png' %}')"></a>
                                     <a href="">{{ post_one.user }} </a> tarafından yazıldı
                                     <br>
                                     <time datetime="2{{ post_one.published_date }}">{{ post_one.published_date|timesince }} önce</time>
@@ -177,9 +183,6 @@
             </div>
         </div>
 
-    </div>
-    <div class="pagination-wrap" role="navigation">
-                    <a class="older-posts" href="page/2/index.html">Diğer Yazılar</a>
     </div>
 
 {% endblock %}

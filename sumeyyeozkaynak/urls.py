@@ -16,6 +16,8 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from . import views
+from django.conf.urls.static import static
+from django.conf import settings
 
 
 urlpatterns = [
@@ -25,3 +27,5 @@ urlpatterns = [
     url(r'^myworkandresearch/', include('myworkandresearch.urls')),
     url(r'^blog/', include('blog.urls')),
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) #upluad edicek dosyaların url'ini ayarladık
