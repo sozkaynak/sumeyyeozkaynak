@@ -62,9 +62,21 @@
                   </li>
                 </ul>
                   -->
-          {% endif %}
-          {{subject.text}}
+
+          {{subject.text|safe|linebreaksbr}}
                 </article>
+          <!--Subjects Yorum sistemi 5.0 (end) -->
+
+          <h3>Yorum Ekle:</h3>
+              {% include 'myworkandresearch/comment.html' %}
+             <hr>
+             {% for comment in subject.comments.all %}
+                <h4>{{ comment.name }}| <small style="color: grey">{{ comment.created_date|timesince }} önce</small></h4>
+                <p>{{ comment.content|linebreaks }}</p>
+                <hr/>
+             {% endfor %}
+          </div>
+          {% endif %}
             </div>
 
           </div>

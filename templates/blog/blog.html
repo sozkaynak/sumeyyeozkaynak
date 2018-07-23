@@ -1,127 +1,185 @@
-
+{% extends 'baseblog.html' %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="tr">
+{% block content %}
 
-<head>
-   <meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Blog || Sümeyye Özkaynak</title>
-		<meta name="HandheldFriendly" content="True">
-		<meta name="MobileOptimized" content="320">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i%7CSpectral:400&amp;subset=latin-ext" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="{%  static 'css/normalize-v=884195a687.css' %}">
-		<link rel="stylesheet" type="text/css" href="{%  static 'css/screen-v=884195a687.css' %}">
-		<link rel="stylesheet" type="text/css" href="{%  static 'css/icons-v=884195a687.css' %}">
-		<meta name="description" content="Thoughts, stories and ideas" />
-    <link rel="shortcut icon" href="favicon.icon" type="image/x-icon" />
-    <link rel="canonical" href="index.html" />
-    <meta name="referrer" content="no-referrer-when-downgrade" />
-    <link rel="next" href="page/2/index.html" />
+    <div class="featured-wrap">
+        <div class="featured-image-wrap">
+            <div class="featured-image" style="background-image: url('https://images.unsplash.com/photo-1501983580222-e073379fe976?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=5c39e4618a773a6c257cf9336b1a8f02')"></div>
+        </div>
+        <article class="featured-post-wrap">
+            <div class="featured-post-label rotate">öne Çıkan</div>
 
-    <meta property="og:site_name" content="Arate" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Arate" />
-    <meta property="og:description" content="Thoughts, stories and ideas" />
-    <meta property="og:url" content="http:/arate.fueko.net/" />
-    <meta property="article:publisher" content="https://www.facebook.com/ghost" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Arate" />
-    <meta name="twitter:description" content="Thoughts, stories and ideas" />
-    <meta name="twitter:url" content="http:/arate.fueko.net/" />
-    <meta name="twitter:site" content="@tryghost" />
+            {% if post_last %}
+                <h2><a href="{{ post_last.get_absolute_url }}">{{ post_last.title }}</a></h2>
+                <div class="item-meta post">
+                    <a href="author/patricia/index.html" class="author-image item-image" style="background-image: url('content/images/2017/11/averie-woodard-181273.jpg')"></a>
+                    <a href="">{{ post_last.author }}</a>
+                    <br>
+                    <time datetime="2017-02-05"> Yayınlanma tarihi {{ post_last.published_date}}</time>
+                </div>
+            {% endif %}
 
-    <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Arate",
-        "logo": "content/images/2018/02/arate.svg"
-    },
-    "url": "http:/arate.fueko.net/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "http:/arate.fueko.net/"
-    },
-    "description": "Thoughts, stories and ideas"
-}
-    </script>
+            <div class="featured-list">
 
-    <script src="{%  static 'js/ghost-sdk-v=884195a687.js' %}"></script>
-    <script>
-    ghost.init({
-        clientId: "ghost-frontend",
-        clientSecret: "37b22db7a9ce"
-    });
-    </script>
-    <meta name="generator" content="Ghost 1.23" />
-    <link rel="alternate" type="application/rss+xml" title="BLOG | Sümeyye Özkaynak" href="rss/index.rss" />
-    <meta name="robots" content=noindex,nofollow>
-</head>
+                <div class="featured-list-label rotate">Daha Fazla</div>
 
-<body class="home-template" data-gr-c-s-loaded="true" cz-shortcut-listen="true" style="">
-    <div class="site-wrap">
+                <section class="featured-list-posts first">
+                </section>
 
-        <header class="header-wrap">
-                        <div class="left">
-                            <div class="logo">
-                                <a class="logo-image" href="http://127.0.0.1:8000"><img src="{% static 'images/logoweb.png' %}" alt="Blog | Sümeyye Özkaynak">sumeyyeozkaynak.me</a>
+                {% for post in post_last_three %}
+                <section class="featured-list-posts ">
+                    <h5><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h5>
+                </section>
+                {% endfor %}
+            </div>
+        </article>
+    </div>
+    <div class="masonry-wrap">
+        <div class="masonry">
+            <div class="item post tag-architecture tag-interior tag-photography">
+                {% if post_six %}
+                <article class="appear">
+                    <div class="item-container first">
+                        <div class="item-container-img">
+                                <div class="appear-img">
+                                    <a class="item-image" href="if-you-do-it-right-it-will-last-forever/index.html">
+                                        <img src="https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;s=9a4efd74e24cc3378bad17d3659db7a5" alt="If you do it right, it will last forever">
+                                    </a>
+                                </div>
+                        </div>
+                        <header class="item-description">
+                            <h2><a href="{{ post_six.get_absolute_url }}">{{ post_six.title }}</a></h2>
+                            <div class="item-excerpt">
+                                <p>{{ post_six.text|safe|truncatewords:25 }}</p>
+                            </div>
+                            <div class="item-meta">
+                                    <a href="" class="author-image item-image" style="background-image: url('content/images/2017/11/sung-wang-209324.jpg')"></a>
+                                    <a href="">{{ post_six.user }}</a> tarafından yazıldı
+                                    <br>
+                                    <time datetime="{{ post_six.published_date }}"> {{ post_six.published_date| timesince }} önce</time>
+                                </div>
+                        </header>
+                    </div>
+                </article>
+                {% endif %}
+            </div>
+            <div class="item post tag-typography tag-hash-list tag-hash-blue color">
+                <article class="appear">
+                        <div class="item-container">
+                            <header class="item-description">
+                                <h2><a href="{{ post_five.get_absolute_url }}">{{ post_five.title }}</a></h2>
+                                <div class="item-excerpt">
+                                    <p>{{ post_five.text|safe|truncatewords:25 }}</p>
+                                </div>
+                                <div class="item-meta">
+                                    <a href="" class="author-image item-image" style="background-image: url('content/images/2017/11/peter-sjo-201640.jpg')"></a>
+                                    <a href="">{{ post_five.user }}</a>  tarafından yazıldı
+                                    <br>
+                                    <time datetime="{{ post_five.published_date }}"> {{ post_five.published_date|timesince }} önce</time>
+                                </div>
+                            </header>
+                        </div>
+                    </article>
+            </div>
+            <div class="item post tag-art tag-exhibition">
+                <article class="appear">
+                    <div class="item-container">
+                        <div class="item-container-img">
+                            <div class="appear-img">
+                                <a class="item-image" href="photography-monographs-and-exhibition-catalogs/index.html">
+                                        <img src="https://images.unsplash.com/photo-1458240598330-ccda17524e5c?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;s=e1139e7a218d5b82ed0154048e044475" alt="Photography monographs and exhibition catalogs">
+                                    </a>
                             </div>
                         </div>
-
-                        <div class="right">
-                            <nav class="nav-wrap">
-                                <label for="toggle" class="nav-wrap--label hamburger hamburger--minus">
-                                    <span class="hamburger-box">
-                                        <span class="hamburger-inner"></span>
-                                    </span>
-                                </label>
-                                <input type="checkbox" id="toggle" class="nav-wrap--toggle">
-                                <ul class="nav-wrap--list">
-                                    <li class="nav-wrap--list-item current-menu-item"><a href="http://127.0.0.1:8000/blog/" class="nav-wrap--link">Blog<br>Anasayfa</a></li>
-
-                                    <li class="nav-wrap--list-item "><a href="features/index.html" class="nav-wrap--link">Düşünce <br>Yazıları </a></li>
-                                    <li class="nav-wrap--list-item "><a href="style-guide/index.html" class="nav-wrap--link">Öneri <br>Paylaşımları </a></li>
-                                    <li class="nav-wrap--list-item "><a href="style-guide/index.html" class="nav-wrap--link">Hikaye <br>Yazıları </a></li>
-                                    <li class="nav-wrap--list-item "><a href="https://themeforest.net/item/arate-clean-and-minimal-ghost-blog-theme/21620068" class="nav-wrap--link">Kariyer/Teknoloji <br>Sohbetleri </a></li>
-
-                                </ul>
-                            </nav>
-                        </div>
-                    </header>
-
-        <div class="top-wrap">
-           <section class="title-wrap">
-                    <div class="top-social">
-                       <a href="https://instagram.com/afafet"><img src="{% static 'images/instagram2.png' %}" style="width: 20px; height: 20px"></a>
-                        <a href="https://twitter.com/sumeyyeozkaynak"><img src="{% static 'images/twitter2.png' %}" style="width: 20px; height: 20px"></a>
-                        <a href="https://www.linkedin.com/in/s%C3%BCmeyye%C3%B6zkaynak/"><img src="{% static 'images/linkedin2.png' %}" style="width: 20px; height: 20px"></a>
+                        <header class="item-description">
+                                <h2><a href="{{ post_four.get_absolute_url }}">{{post_four.title  }}</a></h2>
+                                <div class="item-excerpt">
+                                    <p>{{ post_four.text|safe|truncatewords:25 }}</p>
+                                </div>
+                                <div class="item-meta">
+                                    <a href="" class="author-image item-image" style="background-image: url('content/images/2017/11/allef-vinicius-167640.jpg')"></a>
+                                    <a href="">{{ post_four.user }} </a> tarafından yazıldı
+                                    <br>
+                                    <time datetime="{{ post_four.published_date|timesince }}"> {{ post_four.published_date |timesince }} önce</time>
+                                </div>
+                            </header>
                     </div>
-                     <div class="is-featured bg-top"  style="padding-bottom: 100px">
-                            <h1 class="title">Düşünce, hikaye ve öneriler</h1>
-                            <h2 class="description">"Öz arayışında bir tükeniş yaşandı" </h2>
+                </article>
+            </div>
+            <div class="item post tag-typography tag-design tag-hash-red tag-hash-list color">
+                <article class="appear">
+                    <div class="item-container">
+                        <div class="item-container-img">
+                                <div class="appear-img">
+                                    <a class="item-image" href="less-is-more-work/index.html">
+                                        <img src="https://images.unsplash.com/photo-1476630789082-d055dc81447c?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;s=6f76496ae64a49fe0d7b6b99a299e911" alt="Less is more work">
+                                    </a>
+                                </div>
+                            </div>
+                        <header class="item-description">
+                                <h2><a href="{{ post_three.get_absolute_url }}">{{ post_three.title }}</a></h2>
+                                <div class="item-excerpt">
+                                    <p> {{ post_three.text| safe | truncatewords:25 }}</p>
+                                </div>
+                                <div class="item-meta">
+                                    <a href="" class="author-image item-image" style="background-image: url('content/images/2017/11/sung-wang-209324.jpg')"></a>
+                                    <a href="">{{ post_three.user }} tarafından yazıldı
+                                    <br>
+                                    <time datetime="{{ post_three.published_date}}"> {{ post_three.published_date|timesince }} önce</time>
+                                </div>
+                            </header>
+                    </div>
+                </article>
+            </div>
+            <div class="item post tag-hash-yellow color">
+                <article class="appear">
+                        <div class="item-container">
+                            <header class="item-description">
+                                <h2><a href="{{ post_two.get_absolute_url }}">{{ post_two.title }}</a></h2>
+                                <div class="item-excerpt">
+                                    <p>{{post_two.text|safe|truncatewords:25 }}</p>
+                                </div>
+                                <div class="item-meta">
+                                    <a href="" class="author-image item-image" style="background-image: url('content/images/2017/11/hosien-azour-447571.jpg')"></a>
+                                    <a href="">{{ post_two.user }}</a> tarafından yazıldı
+                                    <br>
+                                    <time datetime="{{ post_two.published_date }}"> {{ post_two.published_date|timesince }} önce</time>
+                                </div>
+                            </header>
                         </div>
-                 </section>
+                    </article>
+            </div>
+            <div class="item post tag-interior featured">
+                <article class="appear">
+                    <div class="item-container last">
+                        <div class="item-container-img">
+                                <div class="appear-img">
+                                    <a class="item-image" href="the-details-are-not-the-details-they-make-the-design/index.html">
+                                        <img src="https://images.unsplash.com/photo-1501983580222-e073379fe976?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;s=5c39e4618a773a6c257cf9336b1a8f02" alt="The details are not the details, they make the design">
+                                    </a>
+                                </div>
+                            </div>
+                        <header class="item-description">
+                            <h2><a href="{{ post_one.get_absolute_url }}">{{ post_one.title }}</a></h2>
+                                <div class="item-excerpt">
+                                    <p>{{ post_one.text|safe|truncatewords:25 }}</p>
+                                </div>
+                                <div class="item-meta">
+                                    <a href="" class="author-image item-image" style="background-image: url('content/images/2017/11/averie-woodard-181273.jpg')"></a>
+                                    <a href="">{{ post_one.user }} </a> tarafından yazıldı
+                                    <br>
+                                    <time datetime="2{{ post_one.published_date }}">{{ post_one.published_date|timesince }} önce</time>
+                                </div>
+                            </header>
+                        </div>
+                </article>
+            </div>
         </div>
 
-         <footer class="footer-wrap">
-            <div class="footer-social">
-
-                <a href="https://instagram.com/afafet"><img src="{% static 'images/instagram.png' %}" style="width: 20px; height: 20px"></a>
-                <a href="https://twitter.com/sumeyyeozkaynak"><img src="{% static 'images/twitter.png' %}" style="width: 20px; height: 20px"></a>
-                <a href="https://www.linkedin.com/in/s%C3%BCmeyye%C3%B6zkaynak/"><img src="{% static 'images/linkedin.png' %}" style="width: 20px; height: 20px"></a>
-
-            </div>
-            <div class="footer-copyright">
-                Copyright © 2018, <a href="http://127.0.0.1:8000/blog/">BLOG||Sümeyye Özkaynak</a>. All Right Reserved.
-            </div>
-         </footer>
     </div>
-</body>
+    <div class="pagination-wrap" role="navigation">
+                    <a class="older-posts" href="page/2/index.html">Diğer Yazılar</a>
+    </div>
 
-</html>
-
+{% endblock %}

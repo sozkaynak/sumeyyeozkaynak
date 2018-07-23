@@ -1210,13 +1210,12 @@ table th code {
   background-color: #e8e8e8;
   padding: 20px;
   margin-bottom: 20px;
-  padding-top: 10px;
   margin-top: 0px; }
   .whats-the-point h1, .whats-the-point h2, .whats-the-point h3, .whats-the-point h4, .whats-the-point h5, .whats-the-point h6 {
-    margin: 0;
-    margin-bottom: 5px; }
-  .whats-the-point ul {
-    padding-left: 15px;
+    color: #111; }
+    .whats-the-point h1:nth-child(1), .whats-the-point h2:nth-child(1), .whats-the-point h3:nth-child(1), .whats-the-point h4:nth-child(1), .whats-the-point h5:nth-child(1), .whats-the-point h6:nth-child(1) {
+      font-weight: bold; }
+  .whats-the-point > ul:last-child, .whats-the-point > p:last-child {
     margin-bottom: 0; }
 
 /* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript+c+dart+java+kotlin+objectivec+swift&plugins=keep-markup */

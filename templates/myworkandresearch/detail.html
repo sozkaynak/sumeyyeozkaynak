@@ -12,11 +12,11 @@
 {% endblock %}
 
 {% block content %}
-<!-- Page Content -->
+    <!-- Page Content -->
     <div class="container-fluid contents">
-<!-- Content Row -->
+        <!-- Content Row -->
       <div class="row">
-<!-- Sidebar Column -->
+          <!-- Sidebar Column -->
          {% for category in categories%}
           <div id="side-nav-container" class="col-sm-3">
           <ul id="mysidebar" class="nav">
@@ -36,8 +36,8 @@
          {% endfor %}
         <!-- Content Column -->
         <div class="col-sm-9 main-contents">
-            {% if articles.title %}
-          <div class="main-contents-body">
+            {% if article.title %}
+                <div class="main-contents-body">
             <article class="post-content">
              <header class="post-header">
               <!-- <div class="btn-group contribute" role="group">
@@ -49,7 +49,7 @@
                  </a>
               </div>-->
               <div>
-                <h1 class="post-title">{{articles.title}} </h1>
+                <h1 class="post-title">{{article.title}} </h1>
               </div>
              </header>
 
@@ -63,13 +63,26 @@
               </li>
             </ul>
 -->
-            {% endif %}
-                {{articles.text}}
+
+                {{article.text|safe|linebreaksbr}}
             </article>
+             <!--Article Yorum sistemi 5.0 (end)-->
+             <h3>Yorum Ekle:</h3>
+              {% include 'myworkandresearch/comment.html' %}
+             <hr>
+             {% for comment in article.comments.all %}
+                <h4>{{ comment.name }}| <small style="color: grey">{{ comment.created_date|timesince }} önce</small></h4>
+                <p>{{ comment.content|linebreaks }}</p>
+                <hr/>
+             {% endfor %}
           </div>
+             {% endif %}
+
         </div>
       </div> <!-- /.row -->
     </div> <!-- /.container -->
+
+
 {% endblock %}
 
 {% block footer %}

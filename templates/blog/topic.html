@@ -1,10 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'baseblog.html' %}
+{% load static %}
 
-</body>
-</html>
+{% block body %}post-template tag-interior tag-architecture tag-design{% endblock %}
+
+{% block content %}
+
+<div class="masonry-wrap">
+
+    <div class="masonry">
+    {%  for topic in topics %}
+        {% for post in topic.topics.all %}
+        <div class="item post tag-interior featured">
+                <article class="appear">
+                    <div class="item-container last">
+                        <div class="item-container-img">
+                                <div class="appear-img">
+                                    <a class="item-image" href="the-details-are-not-the-details-they-make-the-design/index.html">
+                                        <img src="https://images.unsplash.com/photo-1501983580222-e073379fe976?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;s=5c39e4618a773a6c257cf9336b1a8f02" alt="The details are not the details, they make the design">
+                                    </a>
+                                </div>
+                            </div>
+                        <header class="item-description">
+                            <h2><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
+                                <div class="item-excerpt">
+                                    <p>{{ post.text|safe|truncatewords:25 }}</p>
+                                </div>
+                                <div class="item-meta">
+                                    <a href="author/patricia/index.html" class="author-image item-image" style="background-image: url('content/images/2017/11/averie-woodard-181273.jpg')"></a>
+                                    <a href="author/patricia/index.html">{{ post.user }} </a>tarafından yazıldı
+                                    <br>
+                                    <time datetime="2{{ post.published_date }}">{{ post.published_date|timesince }} önce</time>
+                                </div>
+                            </header>
+                        </div>
+                </article>
+        </div>
+        {% endfor %}
+    {% endfor %}
+    </div>
+
+
+    </div>
+   <div class="pagination-wrap" role="navigation">
+           <div class="pagination">
+                <span class="step-links">
+                {% if post.has_previous %}
+                     <a href="?sayfa={{ post.previous_page_number }}">previous</a>
+                {% endif %}
+
+                 <span class="current">
+                 Page {{ post.number }} of {{ post.paginator.num_pages }}.
+                 </span>
+
+                 {% if post.has_next %}
+                     <a href="?sayfa={{ post.next_page_number }}">next</a>
+                {% endif %}
+                 </span>
+            </div>
+        </div>
+{% endblock %}

@@ -37,8 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #Django uygulamaları
     'myworkandresearch',
     'blog',
+    #3.parti uygulamaları
+    'crispy_forms',
+    'django_cleanup',#postu silinceresminide silmek için.
+    'ckeditor',
+    'captcha',
 
 ]
 
@@ -129,5 +135,15 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"),]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')# extra bir klasöre daha bakmasını söylemek için/ static klasörünü belirtiyoruz
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-#CKEDITOR_JQUERY_URL= 'https://ajax.googleapix.com/ajax/libs/jquery/2.2.4/jquery.min.js'
+CKEDITOR_JQUERY_URL= 'https://ajax.googleapix.com/ajax/libs/jquery/2.2.4/jquery.min.js'
+
+
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
+
+#Google reCAPTCHA
+RECAPTCHA_PUBLIC_KEY = '6LdUzWUUAAAAAD8Khdp98TZA5Pcw35vdkmC-Kd84'
+RECAPTCHA_PRIVATE_KEY = '6LdUzWUUAAAAAL5V3b1kdWQS0ZPUqUn62GuKPKcr'
+#NOCAPTCHA = True

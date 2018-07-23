@@ -1,0 +1,132 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="tr">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Blog | Sümeyye Özkaynak</title>
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i%7CNoto+Serif:400i&amp;subset=latin-ext">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/normalize-v=606a16598e.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/icons-v=606a16598e.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/screen-v=606a16598e.css' %}">
+		<meta name="description" content="Thoughts, stories and ideas" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="canonical" href="index.html" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="next" href="page/2/index.html" />
+
+    <meta property="og:site_name" content="Sente" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sente" />
+    <meta property="og:description" content="Thoughts, stories and ideas" />
+    <meta property="og:url" content="http:/sente.fueko.net/" />
+    <meta property="article:publisher" content="https://www.facebook.com/ghost" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Sente" />
+    <meta name="twitter:description" content="Thoughts, stories and ideas" />
+    <meta name="twitter:url" content="http:/sente.fueko.net/" />
+    <meta name="twitter:site" content="@tryghost" />
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Sente",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "content/images/2018/04/sente.svg",
+            "width": 154,
+            "height": 45
+        }
+    },
+    "url": "http:/sente.fueko.net/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http:/sente.fueko.net/"
+    },
+    "description": "Thoughts, stories and ideas"
+}
+    </script>
+
+    <script src="{% static 'js/ghost-sdk-v=606a16598e.js' %}"></script>
+<script>
+ghost.init({
+	clientId: "ghost-frontend",
+	clientSecret: "433f4053d8f6"
+});
+</script>
+    <meta name="generator" content="Ghost 1.23" />
+    <link rel="alternate" type="application/rss+xml" title="Sente" href="rss/index.rss" />
+    <meta name="robots" content=noindex,nofollow>
+	</head>
+
+	<body class="{% block body %}home-template{% endblock %}">
+		<div class="site-wrap">
+			<div class="nav-mobile-icon">
+	            <div class="hamburger hamburger-squeeze">
+		             <div class="hamburger-box">
+		    	    <div class="hamburger-inner"></div>
+		        </div>
+	        </div>
+        </div>
+        <div class="nav-mobile-wrap">
+            <nav class="nav-mobile-list">
+                <ul>
+                    <li class="home current-menu-item nav-mobile-item"><a href="index.html">Blog</a></li>
+                    <li class="features  nav-mobile-item"><a href="features/index.html">Düşünce</a></li>
+                    <li class="style-guide  nav-mobile-item"><a href="style-guide/index.html">Öneriler</a></li>
+                    <li class="tags  nav-mobile-item"><a href="tags/index.html">Hikaye</a></li>
+                    <li class="get-theme  nav-mobile-item"><a href="https://themeforest.net/item/sente-magazine-ghost-blog-theme/21019644">Kariyer/Teknoloji Sohbetleri</a></li>
+                </ul>
+	        </nav>
+        </div>
+        <header class="header-wrap">
+	<div class="logo headroom-logo">
+		<div class="table">
+            <a class="image" href="index.html"><img src="{% static 'images/blog-sumeyyeozkaynak-logo.png' %}" alt="Blog:sumeyyeozkaynak"></a>
+        </div>
+	</div>
+</header>
+        <div class="description">Düşünce, hikaye ve öneriler</div>
+        <nav class ="nav-wrap">
+				<ul>
+					<li class="home current-menu-item nav-mobile-item"><a href="">Blog</a></li>
+                    {% for topic in topic_list %}
+					<li class="features  nav-mobile-item"><a href="{{ topic.get_absolute_url }}">{{ topic.name }}</a></li>
+                    {% endfor %}
+
+                   </ul>
+			</nav>
+        <div class="masonry-margin"></div>
+            {% block content %}
+
+            {% endblock %}
+
+</div>
+
+		<footer class="footer-wrap">
+	<div class="footer-social">
+        <a href="https://twitter.com/sumeyyeozkaynak"><img src="{% static 'images/twitter2.png' %}" style="width: 20px; height: 20px"></a>&bull;
+        <a href="https://instagram.com/afafet"><img src="{% static 'images/instagram3.png' %}" style="width: 20px; height: 20px"></a> &bull;
+        <a href="https://www.linkedin.com/in/s%C3%BCmeyye%C3%B6zkaynak/"><img src="{% static 'images/linkedin2.png' %}" style="width: 18px; height: 18px"></a> &bull;
+        <a href="https://github.com/sozkaynak/"><img src="{% static 'images/github2.png' %}" style="width: 32px; height: 32px"></a>
+
+	</div>
+	<div class="footer-copyright">
+		Copyright &copy; 2018, <a href="index.html">Sente</a>. All Right Reserved.
+		<br>
+		Published with <a href="https://ghost.org">Ghost</a>.
+	</div>
+</footer>
+        <script type="text/javascript" src="{% static "ckeditor/ckeditor-init.js" %}"></script>
+        <script type="text/javascript" src="{% static "ckeditor/ckeditor/ckeditor.js" %}"></script>
+
+        <script src="{% static 'js/global-v=606a16598e.js' %}"></script>
+		<script src="{% static 'js/home-v=606a16598e.js' %}"></script>
+	</body>
+</html>

@@ -1,4 +1,4 @@
-
+from django.utils.text import slugify
 from django.shortcuts import render
 
 

@@ -1,0 +1,9 @@
+<!--myworkandresearch:Category/Subject/Article & blog:Post Yorum sistemi 4.0 --5.0 için
+myworkandresearch:detail.html(ArticleComment)/myworkandresearch:subject.html(SubjectComment)/myworkandresearch:category.html(CategoryComment)/blog:blog.html(PostComment) sayfasına git -->
+{% load crispy_forms_tags %}
+
+<form method="post">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <input type="submit" class="btn btn-primary", value="Yorum ekle">
+</form>
