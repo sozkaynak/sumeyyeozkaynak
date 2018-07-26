@@ -1,10 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'baseblog.html' %}
+{% load static %}
 
+{% block body %}post-template tag-interior tag-architecture tag-design{% endblock %}
+
+{% block sagblok %}<li class="home current-menu-item nav-mobile-item"><a href="www.sumeyyeozkaynak.me">Anasayfa</a></li>{% endblock %}
+
+    {% block sol_content %}
+        <li class="features  nav-mobile-item"><a href="www.sumeyyeozkaynak.me/hakkimda">Hakkımda</a></li>
+        <li class="features  nav-mobile-item"><a href="www.sumeyyeozkaynak.me/myworkandresearch">My work & Research</a></li>
+        <li class="features  nav-mobile-item"><a href="www.sumeyyeozkaynak.me/blog">Blog</a></li>
+    {% endblock %}
+{% block content %}
+
+     {% for about in hakkimda %}
+        <div class="post-wrap">
+        {% if about.image %}
+            <div class="post-featured-image" style="background-image: url('{{ about.image.url }}')"></div>
+        {% endif %}
+            <div class="post-content-wrap">
+                <div class="post-header">
+                    <h1 class="post-title">{{ about.name }}</h1>
+                    <div class="item-meta post">
+                            <a href="" class="author-image item-image" style="background-image: url('{% static 'images/user-photo.png' %}')"></a>
+                            <a href="">Sümeyye Özkaynak</a> tarafından yazıldı
+                            <br>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <div class="kg-card-markdown">
+                        <p>{{about.text|safe|linebreaks }}</p>
+                    </div>
+                    <div class="post-meta">
+                        <div class="left">
+
+                        </div>
+
+                        <!--<div class="right">
+                            Tags: <a href="../tag/interior/index.html">Interior</a>, <a href="../tag/architecture/index.html">Architecture</a>, <a href="../tag/design/index.html">Design</a>
+                        </div>-->
+                    </div>
+                </div>
+                <!--Article Yorum sistemi 5.0 (end)-->
+            </div>
+
+
+        </div>
+
+
+         <div class="disqus"></div>
+    </div>
+    {% endfor %}
 </body>
-</html>
+{% endblock %}
+
+

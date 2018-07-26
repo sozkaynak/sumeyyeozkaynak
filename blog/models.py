@@ -80,3 +80,4 @@ class PostComment(models.Model):
     content = models.TextField(verbose_name='Yorum')
 
     created_date = models.DateTimeField(auto_now_add=True)  # True diyerek tarih bilgisini otomatik dolduruyo
+

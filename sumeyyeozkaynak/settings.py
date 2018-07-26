@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     #Django uygulamaları
     'myworkandresearch',
     'blog',
+    'hakkimda',
     #3.parti uygulamaları
     'crispy_forms',
     'django_cleanup',#postu silinceresminide silmek için.

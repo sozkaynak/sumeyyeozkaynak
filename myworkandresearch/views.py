@@ -17,6 +17,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 def myworkandresearch(request):
     categories = Category.objects.all()
     subjects = Subject.objects.all()
+
     context={
         'categories': categories,
 

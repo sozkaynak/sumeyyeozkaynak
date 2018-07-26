@@ -26,7 +26,7 @@ class Category(models.Model):
         unique_slug=slug
         counter=1
         while Category.objects.filter(slug=unique_slug).exists(): #böyle bir slug var mı ? yok mu ?
-            unique_slug= '{}-{}'.forma(slug,counter)
+            unique_slug= '{}-{}'.format(slug,counter)
             counter +=1
         return unique_slug
 
@@ -66,7 +66,7 @@ class Subject(models.Model):
         unique_slug=slug
         counter=1
         while Subject.objects.filter(slug=unique_slug).exists(): #böyle bir slug var mı ? yok mu ?
-            unique_slug= '{}-{}'.forma(slug,counter)
+            unique_slug= '{}-{}'.format(slug,counter)
             counter +=1
         return unique_slug
 

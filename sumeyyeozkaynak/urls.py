@@ -25,6 +25,7 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^myworkandresearch/', include('myworkandresearch.urls')),
     url(r'^blog/', include('blog.urls')),
+    url(r'^hakkimda/', include('hakkimda.urls'))
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) #upluad edicek dosyaların url'ini ayarladık

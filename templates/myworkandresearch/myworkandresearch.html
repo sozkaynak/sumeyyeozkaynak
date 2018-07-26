@@ -9,7 +9,6 @@
 {% endblock %}
 
 {% block content %}
-
     <!-- Page Content -->
     <div class="container-fluid contents">
       <!-- Content Row -->
@@ -17,43 +16,37 @@
         <!-- Homepage Content Column -->
       <div class="col-sm-12 main-contents">
           <div class="main-contents-body">
-            <article class="post-content">
-              <div class="homepage__illustration">
-                <h1 class="homepage__illustration--text">
-                    <span>      My Work & Research</span>
-                    &nbsp;
-                    <!--<a href="https://medium.com/@sumozkaynak">Learn More</a>-->
-                </h1>
-                <img src="{% static 'images/homepage/machin_learning.png' %}" class="homepage__illustration--image" alt="introduction to machine learning" />
-              </div>
-    {% for category in categories %}
-                <section class="homepage__key_points card">
-                <h1 class="homepage__title">
-       {{category.name}}
-                </h1>
-                <div class="homepage__tagline">
-       {{category.statement|linebreaksbr}}
-                </div>
-                <div class="homepage__button_row">
+            {% for category in categories %}
+                <article class="post-content">
 
-                <a href="{% url 'myworkandresearch:category' category_slug=category.slug %}"  class="get-started-button">BAŞLA!</a> <!-- URL ekle -->
-                </div>
-                <div class="key-points">
-                    {% for subject in category.subject_set.all %}
-                            <div class="homepage__key_point">
+                    {% if category.image %}
+                     <div class="homepage__illustration"><img src="{{ category.image.url }}" class="homepage__illustration--image" alt="{{ category.name }}" /></div>
+                    {% endif %}
+
+                    <section class="homepage__key_points card">
+                    <h1 class="homepage__title">
+                         {{category.name}}
+                    </h1>
+                    <div class="homepage__tagline">
+                        {{category.text|safe|linebreaksbr|truncatewords:50}}
+                     </div>
+                     <div class="homepage__button_row">
+                         <a href="{% url 'myworkandresearch:category' category_slug=category.slug %}"  class="get-started-button">BAŞLA!</a> <!-- URL ekle -->
+                     </div>
+                     <div class="key-points">
+                    {% for subject in category.subject_set.all%}
+                        <div class="homepage__key_point">
                                 <div class="homepage__key_point_title">{{subject.name}}</div>
-                                <p>{{subject.statement}}</p>
-                            </div>
+                                <p>{{subject.text|truncatewords:10|safe}}</p>
+                        </div>
                     {% endfor %}
-                </div>
-
-                </section>
-    {% endfor %}
-
-            </article>
-
+                     </div>
+                 </section>
+                </article>
+            {% endfor %}
           </div>
-        </div> </div> <!-- /.row -->
+      </div>
+      </div> <!-- /.row -->
     </div> <!-- /.container -->
 {% endblock %}
 
@@ -73,7 +66,7 @@
                       </p>
 
                       <p class="licenses">
-                         FATIR/28- “Allah’tan,kulları arasında ancak bilginler korkar.” <br>
+                         “Allah’tan,kulları arasında ancak bilginler korkar.” FATIR/28- <br>
                          “İlim elde etmek her Müslüman kadına ve erkeğe farzdır.”
                       </p>
                   </div>

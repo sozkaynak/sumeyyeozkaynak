@@ -13,7 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="{% static 'css/icons-v=606a16598e.css' %}">
 		<link rel="stylesheet" type="text/css" href="{% static 'css/screen-v=606a16598e.css' %}">
 		<meta name="description" content="Thoughts, stories and ideas" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="{% static 'images/logoweb.png' %}" type="image/x-icon" />
     <link rel="canonical" href="index.html" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
     <link rel="next" href="page/2/index.html" />
@@ -78,14 +78,17 @@ ghost.init({
         <header class="header-wrap">
 	<div class="logo headroom-logo">
 		<div class="table">
-            <a class="image" href="index.html"><img src="{% static 'images/blog-sumeyyeozkaynak-logo.png' %}" alt="Blog:sumeyyeozkaynak"></a>
+            <a class="image" href="www.sumeyyeozkaynak.me"><img src="{% static 'images/blog-sumeyyeozkaynak-logo.png' %}" alt="Blog:sumeyyeozkaynak"></a>
         </div>
 	</div>
 </header>
-        <div class="description">Düşünce, hikaye ve öneriler</div>
+        {% block sag_content %}<div class="description">Düşünce, hikaye ve öneriler</div>{% endblock %}
         <nav class ="nav-wrap">
 				<ul>
-					<li class="home current-menu-item nav-mobile-item"><a href="">Blog</a></li>
+					{% block sagblok %}<li class="home current-menu-item nav-mobile-item"><a href="">Blog</a></li>{% endblock %}
+                    {% block sol_content %}
+
+                    {% endblock %}
                     {% for topic in topic_list %}
 					<li class="features  nav-mobile-item"><a href="{{ topic.get_absolute_url }}">{{ topic.name }}</a></li>
                     {% endfor %}
