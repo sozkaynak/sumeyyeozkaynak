@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f06a719c-4c61-4a6d-8228-6ac4e306b03e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/sumeyyeozkaynak/settings/base.py" afterPath="$PROJECT_DIR$/sumeyyeozkaynak/settings/base.py" />
+      <change beforePath="$PROJECT_DIR$/sumeyyeozkaynak/wsgi.py" afterPath="$PROJECT_DIR$/sumeyyeozkaynak/wsgi.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,14 +20,24 @@
       <file leaf-file-name="activate" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/Scripts/activate">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
+            <state relative-caret-position="179">
               <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sumeyyeozkaynak/wsgi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="13" column="74" lean-forward="false" selection-start-line="13" selection-start-column="74" selection-end-line="13" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sumeyyeozkaynak/settings/base.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -51,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/sumeyyeozkaynak/settings/production.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="44" lean-forward="true" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+              <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -160,11 +170,11 @@
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/sumeyyeozkaynak/settings/settings.py" />
-        <option value="$PROJECT_DIR$/sumeyyeozkaynak/wsgi.py" />
-        <option value="$PROJECT_DIR$/venv/Scripts/activate" />
         <option value="$PROJECT_DIR$/sumeyyeozkaynak/settings/production.py" />
         <option value="$PROJECT_DIR$/sumeyyeozkaynak/settings/development.py" />
         <option value="$PROJECT_DIR$/sumeyyeozkaynak/settings/base.py" />
+        <option value="$PROJECT_DIR$/venv/Scripts/activate" />
+        <option value="$PROJECT_DIR$/sumeyyeozkaynak/wsgi.py" />
       </list>
     </option>
   </component>
@@ -225,23 +235,6 @@
               <item name="website" type="b2602c69:ProjectViewProjectNode" />
               <item name="website" type="462c0819:PsiDirectoryNode" />
               <item name="sumeyyeozkaynak" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="website" type="462c0819:PsiDirectoryNode" />
-              <item name="sumeyyeozkaynak" type="462c0819:PsiDirectoryNode" />
-              <item name="settings" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="website" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="website" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="Scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -748,22 +741,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sumeyyeozkaynak/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="75" lean-forward="false" selection-start-line="13" selection-start-column="75" selection-end-line="13" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Scripts/activate">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sumeyyeozkaynak/settings/development.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -775,7 +752,7 @@
     <entry file="file://$PROJECT_DIR$/sumeyyeozkaynak/settings/production.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="44" lean-forward="true" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -784,6 +761,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="26" column="62" lean-forward="false" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Scripts/activate">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sumeyyeozkaynak/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="74" lean-forward="false" selection-start-line="13" selection-start-column="74" selection-end-line="13" selection-end-column="74" />
           <folding />
         </state>
       </provider>
