@@ -13,8 +13,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
@@ -23,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'pbis#6%5&lu!=m(#=is+yazn)6=w&wx^3a_n3)cv4mrojp0!t&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+
 
 ALLOWED_HOSTS = []
 
@@ -64,7 +63,7 @@ ROOT_URLCONF = 'sumeyyeozkaynak.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, '../../templates')],
 
         'APP_DIRS': True,
         'OPTIONS': {
@@ -84,13 +83,7 @@ WSGI_APPLICATION = 'sumeyyeozkaynak.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 
-    }
-}
 
 
 # Password validation
@@ -133,11 +126,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"),]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "../../static"), ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')# extra bir klasöre daha bakmasını söylemek için/ static klasörünü belirtiyoruz
+STATIC_ROOT = os.path.join(BASE_DIR, '../../staticfiles/')# extra bir klasöre daha bakmasını söylemek için/ static klasörünü belirtiyoruz
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, '../../media')
 
 CKEDITOR_JQUERY_URL= 'https://ajax.googleapix.com/ajax/libs/jquery/2.2.4/jquery.min.js'
 
