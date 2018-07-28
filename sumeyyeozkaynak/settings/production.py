@@ -1,6 +1,8 @@
 from sumeyyeozkaynak.settings.base import *
 DEBUG = False
 
+ALLOWED_HOST=['www.sumeyyeozkaynak.me','sumeyyeozkaynak.me']
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
