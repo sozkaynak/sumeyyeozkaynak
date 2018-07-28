@@ -24,7 +24,7 @@ SECRET_KEY = 'pbis#6%5&lu!=m(#=is+yazn)6=w&wx^3a_n3)cv4mrojp0!t&'
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
-ALLOWED_HOSTS = ['www.sumeyyeozkaynak.me','sumeyyeozkaynak.me','188.166.68.147']
+ALLOWED_HOSTS = ['www.sumeyyeozkaynak.me','sumeyyeozkaynak.me']
 
 
 # Application definition
