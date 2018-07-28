@@ -24,7 +24,7 @@ SECRET_KEY = 'pbis#6%5&lu!=m(#=is+yazn)6=w&wx^3a_n3)cv4mrojp0!t&'
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.sumeyyeozkaynak.me','sumeyyeozkaynak.me','188.166.68.147']
 
 
 # Application definition
@@ -126,9 +126,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "../../static"), ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, '../../staticfiles/')# extra bir klasöre daha bakmasını söylemek için/ static klasörünü belirtiyoruz
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, '../../media')
 

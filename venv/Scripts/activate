@@ -76,5 +76,5 @@ if [ -n "${BASH:-}" -o -n "${ZSH_VERSION:-}" ] ; then
 fi
 
 DJANGO_SETTINGS_MODULE="sumeyyeozkaynak.settings.development"
-   export DJANGO_SETTINGS_MODULE
+export DJANGO_SETTINGS_MODULE
 
