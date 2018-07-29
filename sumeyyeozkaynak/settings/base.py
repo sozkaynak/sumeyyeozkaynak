@@ -63,7 +63,7 @@ ROOT_URLCONF = 'sumeyyeozkaynak.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, '../../templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
 
         'APP_DIRS': True,
         'OPTIONS': {
@@ -128,7 +128,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, '../../media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 CKEDITOR_JQUERY_URL= 'https://ajax.googleapix.com/ajax/libs/jquery/2.2.4/jquery.min.js'
 
@@ -138,4 +138,4 @@ CRISPY_TEMPLATE_PACK = 'bootstrap3'
 #Google reCAPTCHA
 RECAPTCHA_PUBLIC_KEY = '6LdUzWUUAAAAAD8Khdp98TZA5Pcw35vdkmC-Kd84'
 RECAPTCHA_PRIVATE_KEY = '6LdUzWUUAAAAAL5V3b1kdWQS0ZPUqUn62GuKPKcr'
-#NOCAPTCHA = True
+NOCAPTCHA = True
