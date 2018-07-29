@@ -4,9 +4,9 @@
 {% block body_name %} class="" {% endblock %}
 
 {% block header %}
-    <a class="page-link" href="http://sumeyyeozkaynak.me/myworkandresearch/yapay-zeka-artificial-intelligence/">Artificial Intelligent</a>
-    <a class="page-link" href="http://sumeyyeozkaynak.me/myworkandresearch/endustri-muhendisligi-industrial-engineering-1">Industrial Engineering</a>
-    <a class="page-link" href="http://sumeyyeozkaynak.me/myworkandresearch/proje-yonetimi-project-manangement/">Project Manangement</a>
+    {% for category in categories %}
+    <a class="page-link" href="{%  url 'myworkandresearch:category' category_slug=category.slug %}">{{ category.name }}</a>
+    {% endfor %}
     <a class="page-link" href="https://medium.com/@sumozkaynak">Medium</a>
     <a class="page-link" href="https://github.com/sozkaynak">GitHub</a>
 {% endblock %}
