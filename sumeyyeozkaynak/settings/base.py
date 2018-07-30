@@ -24,7 +24,7 @@ SECRET_KEY = 'pbis#6%5&lu!=m(#=is+yazn)6=w&wx^3a_n3)cv4mrojp0!t&'
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
-ALLOWED_HOSTS = ['www.sumeyyeozkaynak.me','sumeyyeozkaynak.me']
+
 
 
 # Application definition
@@ -138,4 +138,4 @@ CRISPY_TEMPLATE_PACK = 'bootstrap3'
 #Google reCAPTCHA
 RECAPTCHA_PUBLIC_KEY = '6LdUzWUUAAAAAD8Khdp98TZA5Pcw35vdkmC-Kd84'
 RECAPTCHA_PRIVATE_KEY = '6LdUzWUUAAAAAL5V3b1kdWQS0ZPUqUn62GuKPKcr'
-NOCAPTCHA = True
+
