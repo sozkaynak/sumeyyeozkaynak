@@ -26,7 +26,6 @@ SECRET_KEY = 'pbis#6%5&lu!=m(#=is+yazn)6=w&wx^3a_n3)cv4mrojp0!t&'
 
 
 
-
 # Application definition
 
 INSTALLED_APPS = [
