@@ -1,7 +1,8 @@
 from sumeyyeozkaynak.settings.base import *
-DEBUG = False
 
-ALLOWED_HOST=['www.sumeyyeozkaynak.me','sumeyyeozkaynak.me']
+DEBUG = True
+ALLOWED_HOSTS=['www.sumeyyeozkaynak.me', 'sumeyyeozkaynak.me','188.166.68.147']
+
 
 DATABASES = {
     'default': {
@@ -15,10 +16,5 @@ DATABASES = {
 }
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-SECURE_SSL_REDIRECT = True
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
 
 NOCAPTCHA = True
