@@ -25,7 +25,7 @@
                         <header class="item-description">
                             <h2><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
                                 <div class="item-excerpt">
-                                    <p>{{ post.text|safe|truncatewords:25 }}</p>
+                                    <p >{{ post.text|safe|truncatewords:25 }}</p>
                                 </div>
                                 <div class="item-meta">
                                     <a href="" class="author-image item-image" style="background-image: url('{% static 'images/user-photo.png' %}')"></a>

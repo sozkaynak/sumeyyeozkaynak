@@ -70,7 +70,7 @@
                             <header class="item-description">
                                 <h2><a href="{{ post_five.get_absolute_url }}">{{ post_five.title }}</a></h2>
                                 <div class="item-excerpt">
-                                    <p>{{ post_five.text|safe|truncatewords:25 }}</p>
+                                    <p style="color:#fff">{{ post_five.text|safe|truncatewords:25 }}</p>
                                 </div>
                                 <div class="item-meta">
                                     <a href="" class="author-image item-image" style="background-image: url('{% static 'images/user-photo.png' %}')"></a>
@@ -118,13 +118,13 @@
                                     <a class="item-image" href="{{post_three.get_absolute_url }}">
                                         <img src="{{ post_three.image.url }}" alt="{{ post_three.title }}">
                                     </a>
-                                {% endif %}
+                                    {% endif %}
                                 </div>
                             </div>
                         <header class="item-description">
                                 <h2><a href="{{ post_three.get_absolute_url }}">{{ post_three.title }}</a></h2>
                                 <div class="item-excerpt">
-                                    <p> {{ post_three.text| safe | truncatewords:25 }}</p>
+                                    <p style="color:#fff"> {{ post_three.text| safe | truncatewords:25 }}</p>
                                 </div>
                                 <div class="item-meta">
                                     <a href="" class="author-image item-image" style="background-image: url('{% static 'images/user-photo.png' %}')"></a>
@@ -132,7 +132,7 @@
                                     <br>
                                     <time datetime="{{ post_three.published_date}}"> {{ post_three.published_date|timesince }} önce</time>
                                 </div>
-                            </header>
+                        </header>
                     </div>
                 </article>
             </div>
@@ -142,7 +142,7 @@
                             <header class="item-description">
                                 <h2><a href="{{ post_two.get_absolute_url }}">{{ post_two.title }}</a></h2>
                                 <div class="item-excerpt">
-                                    <p>{{post_two.text|safe|truncatewords:25 }}</p>
+                                    <p style="color:#fff">{{post_two.text|safe|truncatewords:25 }}</p>
                                 </div>
                                 <div class="item-meta">
                                     <a href="" class="author-image item-image" style="background-image: url('{% static 'images/user-photo.png' %}')"></a>
@@ -163,7 +163,7 @@
                                     <a class="item-image" href="{{post_one.get_absolute_url }}">
                                         <img src="{{ post_one.image.url }}" alt="{{ post_one.title }}">
                                     </a>
-                                {% endif %}
+                                    {% endif %}
                                 </div>
                             </div>
                         <header class="item-description">
