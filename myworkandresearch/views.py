@@ -35,7 +35,7 @@ def category(request,category_slug):
     form = CategoryCommentForm(request.POST or None)
     if form.is_valid():
         comment = form.save(commit=False)
-        comment.subject = subject
+        comment.category = category
         comment.save()
 
 
