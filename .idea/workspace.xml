@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f06a719c-4c61-4a6d-8228-6ac4e306b03e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/sumeyyeozkaynak/settings/development.py" afterPath="$PROJECT_DIR$/sumeyyeozkaynak/settings/development.py" />
-      <change beforePath="$PROJECT_DIR$/templates/myworkandresearch/category.html" afterPath="$PROJECT_DIR$/templates/myworkandresearch/category.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
       <change beforePath="$PROJECT_DIR$/templates/myworkandresearch/detail.html" afterPath="$PROJECT_DIR$/templates/myworkandresearch/detail.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,16 +17,17 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6739895">
+    <splitter split-orientation="horizontal" split-proportion="0.119613014">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="category.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/category.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="167">
-                  <caret line="47" column="38" lean-forward="true" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="38" />
+                <state relative-caret-position="150">
+                  <caret line="46" column="22" lean-forward="false" selection-start-line="46" selection-start-column="12" selection-end-line="87" selection-end-column="19" />
                   <folding>
                     <element signature="n#for#1;n#!!top" expanded="false" />
+                    <element signature="n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
                     <element signature="n#for#4;n#!!top" expanded="false" />
                   </folding>
                 </state>
@@ -47,16 +48,26 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="detail.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/detail.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="224">
-                  <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+                <state relative-caret-position="119">
+                  <caret line="7" column="100" lean-forward="true" selection-start-line="7" selection-start-column="100" selection-end-line="7" selection-end-column="100" />
                   <folding>
                     <element signature="n#for#1;n#!!top" expanded="false" />
                     <element signature="n#article#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
                     <element signature="n#for#4;n#!!top" expanded="false" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/templates/base.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="136">
+                  <caret line="56" column="4" lean-forward="false" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -171,11 +182,11 @@
         <option value="$PROJECT_DIR$/templates/blog/blog.html" />
         <option value="$PROJECT_DIR$/static/css/screen-v=606a16598e.css" />
         <option value="$PROJECT_DIR$/myworkandresearch/forms.py" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/static/css/main.css" />
-        <option value="$PROJECT_DIR$/templates/myworkandresearch/detail.html" />
         <option value="$PROJECT_DIR$/sumeyyeozkaynak/settings/development.py" />
         <option value="$PROJECT_DIR$/templates/myworkandresearch/category.html" />
+        <option value="$PROJECT_DIR$/templates/myworkandresearch/detail.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
       </list>
     </option>
   </component>
@@ -352,7 +363,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32695374" sideWeight="0.4966722" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41945773" sideWeight="0.7699849" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.7699849" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1417798" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -713,14 +724,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/comment.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -745,18 +748,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-          <folding>
-            <element signature="n#for#1;n#!!top" expanded="false" />
-            <element signature="n#article#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#for#4;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sumeyyeozkaynak/settings/development.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -767,12 +758,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/category.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="47" column="38" lean-forward="true" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="38" />
+        <state relative-caret-position="150">
+          <caret line="46" column="22" lean-forward="false" selection-start-line="46" selection-start-column="12" selection-end-line="87" selection-end-column="19" />
           <folding>
             <element signature="n#for#1;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
             <element signature="n#for#4;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="100" lean-forward="true" selection-start-line="7" selection-start-column="100" selection-end-line="7" selection-end-column="100" />
+          <folding>
+            <element signature="n#for#1;n#!!top" expanded="false" />
+            <element signature="n#article#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#for#4;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="56" column="4" lean-forward="false" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
