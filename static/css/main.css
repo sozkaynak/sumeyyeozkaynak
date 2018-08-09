@@ -1353,6 +1353,36 @@ pre {
     padding-right: 0;
     padding-left: 0; }
 
+.language-console .highlight,
+.highlight > code.language-console {
+  background: #212121;
+  color: #64DD17;
+  /* Generic.Output */ }
+  .language-console .highlight .go,
+  .highlight > code.language-console .go {
+    color: white; }
+
+pre.console-output {
+  background: #212121;
+  color: white; }
+
+.language-terminal .highlight,
+.highlight > code.language-terminal {
+  background: #212121;
+  color: #64DD17;
+  /* Generic.Prompt */
+  /* Name.Builtin */
+  /* Generic.Output */ }
+  .language-terminal .highlight .gp,
+  .highlight > code.language-terminal .gp {
+    color: #9E9E9E; }
+  .language-terminal .highlight .nb,
+  .highlight > code.language-terminal .nb {
+    color: #7CB342; }
+  .language-terminal .highlight .go,
+  .highlight > code.language-terminal .go {
+    color: white; }
+
 .cards {
   display: flex;
   flex-wrap: wrap;
