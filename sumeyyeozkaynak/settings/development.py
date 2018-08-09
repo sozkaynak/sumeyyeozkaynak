@@ -1,6 +1,6 @@
 from sumeyyeozkaynak.settings.base import *
 DEBUG = True
-ALLOWED_HOSTS=['sumeyyeozkaynak.me','www.sumeyyeozkaynak.me']
+ALLOWED_HOSTS=[]
 
 DATABASES = {
     'default': {

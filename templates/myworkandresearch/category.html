@@ -16,8 +16,8 @@
     <div class="container-fluid contents">
 <!-- Content Row -->
       <div class="row">
-<!-- Sidebar Column -->
-      {% for category in categories%}
+            <!-- Sidebar Column -->
+          {% for category in categories%}
           <div id="side-nav-container" class="col-sm-3">
           <ul id="mysidebar" class="nav">
              {% for subject in category.subject_set.all %}
@@ -43,12 +43,11 @@
         </div>
 
       {% endfor %}
-
-<!-- Content Column -->
-        <div class="col-sm-9 main-contents">
-      {% if category.name %}
-        <div class="main-contents-body">
-            <article class="post-content">
+            <!-- Content Column -->
+            <div class="col-sm-9 main-contents">
+                {% if category.name %}
+                     <div class="main-contents-body">
+                     <article class="post-content">
                 <header class="post-header">
               <!-- <div class="btn-group contribute" role="group">
                  <a href="https://github.com/flutter/website/blob/master/gestures.md" class="btn btn-sm">
@@ -75,24 +74,21 @@
 
                 {{category.text|safe|linebreaksbr}}
             </article>
-        <!--Category Yorum sistemi 5.0 (end) -->
-        <h3>Yorum Ekle:</h3>
-              {% include 'myworkandresearch/comment.html' %}
-             <hr>
-             {% for comment in category.comments.all %}
+                     <!--Category Yorum sistemi 5.0 (end) -->
+                     <h3>Yorum Ekle:</h3>
+                    {% include 'myworkandresearch/comment.html' %}
+                     <hr>
+                     {% for comment in category.comments.all %}
                 <h4>{{ comment.name }}| <small style="color: grey">{{ comment.created_date|timesince }} önce</small></h4>
                 <p>{{ comment.content|linebreaks }}</p>
                 <hr/>
              {% endfor %}
-          </div>
-        {% endif %}
-        </div>
-
+                 </div>
+                {% endif %}
+             </div>
       </div>
-      </div>
-<!-- /.row -->
-    </div>
-<!-- /.container -->
+    </div><!-- /.row -->
+    </div><!-- /.container -->
 {% endblock %}
 
 {% block footer %}
