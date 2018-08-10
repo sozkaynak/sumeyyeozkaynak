@@ -37,27 +37,9 @@
                     {% if article.title %}
                      <article class="post-content">
                          <header class="post-header">
-                             <!-- <div class="btn-group contribute" role="group">
-                                <a href="https://github.com/flutter/website/blob/master/gestures.md" class="btn btn-sm">
-                                     <i class="fa fa-pencil"></i> Edit Source
-                                </a>
-                                <a href="https://github.com/flutter/flutter/issues/new?title=Issue from website page Taps, drags, and other gestures in Flutter&body=From URL: https://flutter.io/gestures.md&labels=dev: docs - website" class="btn btn-sm">
-                                     <i class="fa fa-github"></i> File Issue
-                                </a>
-                            </div>-->
                              <div><h1 class="post-title">{{article.title}}</h1></div>
                          </header>
-                        <!--
-              <ul id="markdown-toc">
-              <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
-              <li><a href="#pointers" id="markdown-toc-pointers">Pointers</a></li>
-              <li><a href="#gestures" id="markdown-toc-gestures">Gestures</a>    <ul>
-                  <li><a href="#gesture-disambiguation" id="markdown-toc-gesture-disambiguation">Gesture disambiguation</a></li>
-                </ul>
-              </li>
-            </ul>
-              -->
-                         {{article.text|safe|linebreaksbr}}
+                         <p>{{article.text|safe}}</p>
                      </article>
                     {% endif %}
                      <!--Article Yorum sistemi 5.0 (end)-->
