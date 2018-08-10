@@ -63,27 +63,33 @@ ghost.init({
     <link rel="alternate" type="application/rss+xml" title="Sente" href="rss/index.rss" />
     <meta name="robots" content=noindex,nofollow>
 	</head>
-
 	<body class="{% block body %}home-template{% endblock %}">
 		<div class="site-wrap">
-			<div class="nav-mobile-icon">
+            <div class="nav-mobile-icon">
 	            <div class="hamburger hamburger-squeeze">
 		             <div class="hamburger-box">
 		    	    <div class="hamburger-inner"></div>
 		        </div>
 	        </div>
         </div>
-
-        <header class="header-wrap">
+            <div class="nav-mobile-wrap">
+	            <nav class="nav-mobile-list">
+		            <ul>
+                        {% block sagblok0 %}<li class="home current-menu-item nav-mobile-item"><a href="http://www.sumeyyeozkaynak.me/blog">Blog</a></li>{% endblock %}
+                        {% for topic in topic_list %}<li class="features  nav-mobile-item"><a href="{{ topic.get_absolute_url }}">{{ topic.name }}</a></li>{% endfor %}
+                    </ul>
+                </nav>
+            </div>
+            <header class="header-wrap">
 	<div class="logo headroom-logo">
 		<div class="table">
-            <a class="image" href="http://www.sumeyyeozkaynak.me/"><img src="{% static 'images/blog-sumeyyeozkaynak-logo.png' %}" alt="Blog:sumeyyeozkaynak" style="width: 50%; height: 40%"></a>
+            <a class="image" href="http://www.sumeyyeozkaynak.me/"><img src="{% static 'images/logoweb.png' %}" alt="Blog:sumeyyeozkaynak">Sümeyye Özkaynak | {%block head-logo %}{% endblock %}</a>
         </div>
 	</div>
 </header>
-        {% block sag_content %}<div class="description">Düşünce, hikaye ve öneriler</div>{% endblock %}
-        <nav class ="nav-wrap">
-				<ul>
+            {% block sag_content %}<div class="description">Düşünce, hikaye ve öneriler</div>{% endblock %}
+            <nav class ="nav-wrap">
+                <ul>
 					{% block sagblok %}<li class="home current-menu-item nav-mobile-item"><a href="http://www.sumeyyeozkaynak.me/blog">Blog</a></li>{% endblock %}
                     {% block sol_content %}
 
@@ -91,33 +97,28 @@ ghost.init({
                     {% for topic in topic_list %}
 					<li class="features  nav-mobile-item"><a href="{{ topic.get_absolute_url }}">{{ topic.name }}</a></li>
                     {% endfor %}
-
-                   </ul>
-			</nav>
-        <div class="masonry-margin"></div>
+                </ul>
+            </nav>
+            <div class="masonry-margin"></div>
             {% block content %}
 
             {% endblock %}
-
-</div>
-
+        </div>
 		<footer class="footer-wrap">
-	<div class="footer-social">
-        <a href="https://twitter.com/sumeyyeozkaynak"><img src="{% static 'images/twitter2.png' %}" style="width: 20px; height: 20px"></a>&bull;
-        <a href="https://instagram.com/afafet"><img src="{% static 'images/instagram3.png' %}" style="width: 20px; height: 20px"></a> &bull;
-        <a href="https://www.linkedin.com/in/s%C3%BCmeyye%C3%B6zkaynak/"><img src="{% static 'images/linkedin2.png' %}" style="width: 18px; height: 18px"></a> &bull;
-        <a href="https://github.com/sozkaynak/"><img src="{% static 'images/github2.png' %}" style="width: 32px; height: 32px"></a>
-
-	</div>
-	<div class="footer-copyright">
-		Copyright &copy; 2018, {%  block footer-descript %}<a href="http://www.sumeyyeozkaynak.me/blog">sumeyyeozkaynak.me Blog</a> {% endblock %}. All Right Reserved.
-		<br>
-		Published with <a href="http://www.sumeyyeozkaynak.me/">Sümeyye Özkaynak</a>.
-	</div>
-</footer>
+            <div class="footer-social">
+                <a href="https://twitter.com/sumeyyeozkaynak"><img src="{% static 'images/twitter2.png' %}" style="width: 20px; height: 20px"></a>&bull;
+                <a href="https://instagram.com/afafet"><img src="{% static 'images/instagram3.png' %}" style="width: 20px; height: 20px"></a> &bull;
+                <a href="https://www.linkedin.com/in/s%C3%BCmeyye%C3%B6zkaynak/"><img src="{% static 'images/linkedin2.png' %}" style="width: 18px; height: 18px"></a> &bull;
+                <a href="https://github.com/sozkaynak/"><img src="{% static 'images/github2.png' %}" style="width: 32px; height: 32px"></a>
+            </div>
+            <div class="footer-copyright">
+                Copyright &copy; 2018, {%  block footer-descript %}<a href="http://www.sumeyyeozkaynak.me/blog">sumeyyeozkaynak.me Blog</a> {% endblock %}. All Right Reserved.
+                <br>
+                Published with <a href="http://www.sumeyyeozkaynak.me/">Sümeyye Özkaynak</a>.
+            </div>
+        </footer>
         <script type="text/javascript" src="{% static "ckeditor/ckeditor-init.js" %}"></script>
         <script type="text/javascript" src="{% static "ckeditor/ckeditor/ckeditor.js" %}"></script>
-
         <script src="{% static 'js/global-v=606a16598e.js' %}"></script>
 		<script src="{% static 'js/home-v=606a16598e.js' %}"></script>
 	</body>

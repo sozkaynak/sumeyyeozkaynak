@@ -1,11 +1,17 @@
 {% extends 'baseblog.html' %}
 {% load static %}
 
+{% block body %}post-template tag-interior tag-architecture tag-design{% endblock %}
+{%block head-logo %}<small>Blog</small>{% endblock %}
+
+
+{% block sagblok0 %}<li class="home current-menu-item nav-mobile-item"><a href="http://www.sumeyyeozkaynak.me/blog">Blog</a></li>{% endblock %}
+
 {% block content %}
 
     <div class="featured-wrap">
         <div class="featured-image-wrap">
-            <div class="featured-image" style="background-image: url('{%  static 'images/IMG_20170625_164118-01.jpeg' %}');margin-left: 20px; width: 700px;height: 400px"></div>
+           <div class="featured-image" style="background-image: url(https://images.unsplash.com/photo-1501983580222-e073379fe976?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;s=5c39e4618a773a6c257cf9336b1a8f02); visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.65s ease-in-out 0s, opacity 0.65s ease-in-out 0s; transition: transform 0.65s ease-in-out 0s, opacity 0.65s ease-in-out 0s; " data-sr-id="1"></div>
         </div>
         <article class="featured-post-wrap">
         {% if post_last %}
