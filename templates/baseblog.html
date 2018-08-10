@@ -77,7 +77,7 @@ ghost.init({
         <header class="header-wrap">
 	<div class="logo headroom-logo">
 		<div class="table">
-            <a class="image" href="http://www.sumeyyeozkaynak.me/"><img src="{% static 'images/blog-header.png' %}" alt="Blog:sumeyyeozkaynak"></a>
+            <a class="image" href="http://www.sumeyyeozkaynak.me/"><img src="{% static 'images/blog-sumeyyeozkaynak-logo.png' %}" alt="Blog:sumeyyeozkaynak" style="width: 50%; height: 40%"></a>
         </div>
 	</div>
 </header>
@@ -110,7 +110,7 @@ ghost.init({
 
 	</div>
 	<div class="footer-copyright">
-		Copyright &copy; 2018, <a href="http://www.sumeyyeozkaynak.me/blog">sumeyyeozkaynak.me Blog</a>. All Right Reserved.
+		Copyright &copy; 2018, {%  block footer-descript %}<a href="http://www.sumeyyeozkaynak.me/blog">sumeyyeozkaynak.me Blog</a> {% endblock %}. All Right Reserved.
 		<br>
 		Published with <a href="http://www.sumeyyeozkaynak.me/">Sümeyye Özkaynak</a>.
 	</div>

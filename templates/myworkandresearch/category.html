@@ -79,10 +79,10 @@
                     {% include 'myworkandresearch/comment.html' %}
                      <hr>
                      {% for comment in category.comments.all %}
-                <h4>{{ comment.name }}| <small style="color: grey">{{ comment.created_date|timesince }} önce</small></h4>
-                <p>{{ comment.content|linebreaks }}</p>
-                <hr/>
-             {% endfor %}
+                        <h4>{{ comment.name }}| <small style="color: grey">{{ comment.created_date|timesince }} önce</small></h4>
+                        <p>{{ comment.content|linebreaks }}</p>
+                        <hr/>
+                     {% endfor %}
                  </div>
                 {% endif %}
              </div>
