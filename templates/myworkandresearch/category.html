@@ -76,7 +76,7 @@
                      <h3>Yorum Ekle:</h3>
                     {% include 'myworkandresearch/comment.html' %}
                      <hr>
-                     {% for comment in category.category.all %}
+                     {% for comment in category.categorys.all %}
                         <h4>{{ comment.name }}| <small style="color: grey">{{ comment.created_date|timesince }} önce</small></h4>
                         <p>{{ comment.content|linebreaks }}</p>
                         <hr/>
