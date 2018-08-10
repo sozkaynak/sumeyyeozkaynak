@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f06a719c-4c61-4a6d-8228-6ac4e306b03e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/media/sehir-trafigi.jpg" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/blog.html" afterPath="$PROJECT_DIR$/templates/blog/blog.html" />
+      <change beforePath="$PROJECT_DIR$/static/css/normalize-v=606a16598e.css" afterPath="$PROJECT_DIR$/static/css/normalize-v=606a16598e.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,17 +16,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="blog.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/blog/blog.html">
+      <file leaf-file-name="normalize-v=606a16598e.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/css/normalize-v=606a16598e.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="141" column="38" lean-forward="false" selection-start-line="141" selection-start-column="38" selection-end-line="141" selection-end-column="38" />
-              <folding>
-                <element signature="e#470#663#0#HTML" expanded="true" />
-                <element signature="e#7506#7524#0#HTML" expanded="true" />
-                <element signature="e#7810#7879#0#HTML" expanded="true" />
-                <element signature="n#if#5;n#!!top" expanded="false" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,7 +89,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/static/css/screen-v=884195a687.css" />
         <option value="$PROJECT_DIR$/static/js/index-856e8adc7b0406d64d0c11d3eb3454de7b3050f184643e74f9e475c3e32baafc.js" />
         <option value="$PROJECT_DIR$/static/js/global-v=884195a687.js" />
         <option value="$PROJECT_DIR$/static/js/home-v=606a16598e.js" />
@@ -147,6 +139,7 @@
         <option value="$PROJECT_DIR$/templates/blog/topic.html" />
         <option value="$PROJECT_DIR$/templates/baseblog.html" />
         <option value="$PROJECT_DIR$/templates/blog/blog.html" />
+        <option value="$PROJECT_DIR$/static/css/normalize-v=606a16598e.css" />
       </list>
     </option>
   </component>
@@ -202,6 +195,17 @@
             <path>
               <item name="sumeyyeozkaynak" type="b2602c69:ProjectViewProjectNode" />
               <item name="sumeyyeozkaynak" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sumeyyeozkaynak" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sumeyyeozkaynak" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sumeyyeozkaynak" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sumeyyeozkaynak" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sumeyyeozkaynak" type="b2602c69:ProjectViewProjectNode" />
@@ -696,14 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/normalize-v=606a16598e.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/screen-v=606a16598e.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -766,11 +762,19 @@
         <state relative-caret-position="275">
           <caret line="141" column="38" lean-forward="false" selection-start-line="141" selection-start-column="38" selection-end-line="141" selection-end-column="38" />
           <folding>
-            <element signature="e#470#663#0#HTML" expanded="true" />
-            <element signature="e#7506#7524#0#HTML" expanded="true" />
-            <element signature="e#7810#7879#0#HTML" expanded="true" />
+            <element signature="e#470#663#0#HTML" expanded="false" />
+            <element signature="e#7506#7524#0#HTML" expanded="false" />
+            <element signature="e#7810#7879#0#HTML" expanded="false" />
             <element signature="n#if#5;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/normalize-v=606a16598e.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
