@@ -1,5 +1,5 @@
 # Create your views here.
-from django.shortcuts import render, get_object_or_404,Http404
+from django.shortcuts import render, get_object_or_404,Http404,HttpResponseRedirect
 from django.template import loader, context
 from django.urls import reverse
 from .models import Topic, Post
@@ -89,6 +89,7 @@ def post(request,topic_slug,post_slug):
         comment = form.save(commit=False)
         comment.post = post
         comment.save()
+        return HttpResponseRedirect(post.get_absolute_url())
 
     context = {
         'topic': topic,

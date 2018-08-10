@@ -6,7 +6,7 @@ from captcha.fields import ReCaptchaField
 
 #Post Yorum Sistemi 2.0 --> 3.0 için blog:views.py sayfasına gidiniz.
 class PostCommentForm(forms.ModelForm):
-    #captcha = ReCaptchaField()
+    captcha = ReCaptchaField()
     class Meta:
         model=PostComment
         fields=[
