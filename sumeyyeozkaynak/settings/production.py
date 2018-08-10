@@ -1,6 +1,6 @@
 from sumeyyeozkaynak.settings.base import *
 
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS=['www.sumeyyeozkaynak.me', 'sumeyyeozkaynak.me','188.166.68.147']
 
 
