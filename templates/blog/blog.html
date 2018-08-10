@@ -11,8 +11,9 @@
 
     <div class="featured-wrap">
         <div class="featured-image-wrap">
-           <div class="featured-image" style="background-image: url(https://images.unsplash.com/photo-1501983580222-e073379fe976?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;s=5c39e4618a773a6c257cf9336b1a8f02); visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.65s ease-in-out 0s, opacity 0.65s ease-in-out 0s; transition: transform 0.65s ease-in-out 0s, opacity 0.65s ease-in-out 0s; " data-sr-id="1"></div>
-        </div>
+            <div class="featured-image" style="background-image: url(https://images.unsplash.com/photo-1501983580222-e073379fe976?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=5c39e4618a773a6c257cf9336b1a8f02)">
+		</div>
+          </div>
         <article class="featured-post-wrap">
         {% if post_last %}
             <div class="featured-post-label rotate">En Son</div>
@@ -137,6 +138,7 @@
                                     <a href="">{{ post_three.user }} tarafından yazıldı
                                     <br>
                                     <time datetime="{{ post_three.published_date}}"> {{ post_three.published_date|timesince }} önce</time>
+                                    </a>
                                 </div>
                         </header>
                     </div>
