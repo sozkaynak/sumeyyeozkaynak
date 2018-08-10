@@ -37,6 +37,7 @@ def category(request,category_slug):
         comment = form.save(commit=False)
         comment.category = category
         comment.save()
+        return HttpResponseRedirect(category.get_absolute_url())
 
 
     context = {
@@ -60,8 +61,7 @@ def subject(request,category_slug,subject_slug):
         comment = form.save(commit=False)
         comment.subject = subject
         comment.save()
-
-
+        return HttpResponseRedirect(subject.get_absolute_url())
     context = {
         'categories': categories,
         'subjects': subjects,
@@ -82,6 +82,7 @@ def detail(request,category_slug,subject_slug,article_slug):
         comment=form.save(commit=False)
         comment.article=article
         comment.save()
+        return HttpResponseRedirect(article.get_absolute_url())
 
 
     context = {

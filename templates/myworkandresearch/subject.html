@@ -1,8 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
-
 {% block body_name %} class="" {% endblock %}
-
 {% block header %}
     {% for category in categories %}
     <a class="page-link" href="{%  url 'myworkandresearch:category' category_slug=category.slug %}">{{ category.name }}</a>
@@ -10,12 +8,11 @@
     <a class="page-link" href="https://medium.com/@sumozkaynak">Medium</a>
     <a class="page-link" href="https://github.com/sozkaynak">GitHub</a>
 {% endblock %}
-
 {% block content %}
 <!-- Page Content -->
     <div class="container-fluid contents">
 <!-- Content Row -->
-      <div class="row">
+        <div class="row">
 <!-- Sidebar Column -->
        {% for category in categories%}
           <div id="side-nav-container" class="col-sm-3">
@@ -36,10 +33,10 @@
       {% endfor %}
         <!-- Content Column -->
           <div class="col-sm-9 main-contents">
-          {% if subject.name %}
             <div class="main-contents-body">
-                <article class="post-content">
-                    <header class="post-header">
+                {% if subject.name %}
+                    <article class="post-content">
+                     <header class="post-header">
                   <!-- <div class="btn-group contribute" role="group">
                      <a href="https://github.com/flutter/website/blob/master/gestures.md" class="btn btn-sm">
                         <i class="fa fa-pencil"></i> Edit Source
@@ -48,10 +45,10 @@
                         <i class="fa fa-github"></i> File Issue
                      </a>
                   </div>-->
-                  <div>
+                        <div>
                     <h1 class="post-title">{{subject.name}} </h1>
                   </div>
-               </header>
+                      </header>
                   <!--
                   <ul id="markdown-toc">
                   <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
@@ -63,49 +60,45 @@
                 </ul>
                   -->
 
-          {{subject.text|safe|linebreaksbr}}
-                </article>
+                             {{subject.text|safe|linebreaksbr}}
+                    </article>
           <!--Subjects Yorum sistemi 5.0 (end) -->
-
-          <h3>Yorum Ekle:</h3>
-              {% include 'myworkandresearch/comment.html' %}
-             <hr>
-             {% for comment in subject.comments.all %}
-                <h4>{{ comment.name }}| <small style="color: grey">{{ comment.created_date|timesince }} önce</small></h4>
-                <p>{{ comment.content|linebreaks }}</p>
-                <hr/>
-             {% endfor %}
-          </div>
-          {% endif %}
+                {% endif %}
+                <h3>Yorum Ekle:</h3>
+                 {% include 'myworkandresearch/comment.html' %}
+                <hr>
+                {% for comment in subject.subjects.all %}
+                    <h4>{{ comment.name }}| <small style="color: grey">{{ comment.created_date|timesince }} önce</small></h4>
+                     <p>{{ comment.content|linebreaks }}</p>
+                     <hr/>
+                {% endfor %}
             </div>
-
           </div>
-          </div> <!-- /.row -->
+      </div>
+    </div> <!-- /.row -->
     </div> <!-- /.container -->
-
 {% endblock %}
-
 {% block footer %}
 <footer class="site-footer">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="logo">
-                      <img src="{% static 'images/logoweb.png' %}" alt="Logo" width="100" height="100">
-                    </div>
-                      <p class="site-footer__link-list">
-                        <a href="https://medium.com/@sumozkaynak">Medium@</a> &bull;
-                        <a href="https://github.com/sozkaynak/">github</a> &bull;
-                        <a href="https://twitter.com/sumeyyeozkaynak">twitter</a> &bull;
-                        <a href="https://instagram.com/afafet">instagram</a>
-                      </p>
-
-                      <p class="licenses">
-                         “Allah’tan,kulları arasında ancak bilginler korkar.” FATIR/28- <br>
-                         “İlim elde etmek her Müslüman kadına ve erkeğe farzdır.”
-                      </p>
-                  </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="logo">
+                    <img src="{% static 'images/logoweb.png' %}" alt="Logo" width="100" height="100">
                 </div>
-              </div>
-            </footer>
+                <p class="site-footer__link-list">
+                    <a href="https://medium.com/@sumozkaynak">Medium@</a> &bull;
+                    <a href="https://github.com/sozkaynak/">github</a> &bull;
+                    <a href="https://twitter.com/sumeyyeozkaynak">twitter</a> &bull;
+                    <a href="https://instagram.com/afafet">instagram</a>
+                </p>
+
+                <p class="licenses">
+                    “Allah’tan,kulları arasında ancak bilginler korkar.” FATIR/28- <br>
+                    “İlim elde etmek her Müslüman kadına ve erkeğe farzdır.”
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
 {% endblock %}

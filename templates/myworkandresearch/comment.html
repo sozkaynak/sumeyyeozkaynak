@@ -2,7 +2,7 @@
 myworkandresearch:detail.html(ArticleComment)/myworkandresearch:subject.html(SubjectComment)/myworkandresearch:category.html(CategoryComment)/blog:blog.html(PostComment) sayfasına git -->
 {% load crispy_forms_tags %}
 
-<form method="post">
+<form method="POST">
     {% csrf_token %}
     {{ form|crispy }}
     <input type="submit" class="btn btn-primary", value="Yorum ekle">
