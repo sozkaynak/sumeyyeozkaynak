@@ -76,7 +76,11 @@ ghost.init({
 	            <nav class="nav-mobile-list">
 		            <ul>
                         {% block sagblok0 %}<li class="home current-menu-item nav-mobile-item"><a href="http://www.sumeyyeozkaynak.me/blog">Blog</a></li>{% endblock %}
-                        {% for topic in topic_list %}<li class="features  nav-mobile-item"><a href="{{ topic.get_absolute_url }}">{{ topic.name }}</a></li>{% endfor %}
+                       {% block sol_content0 %}
+                        {% for topic in topic_list %}
+					        <li class="features  nav-mobile-item"><a href="{{ topic.get_absolute_url }}">{{ topic.name }}</a></li>
+                        {% endfor %}
+                    {% endblock %}
                     </ul>
                 </nav>
             </div>
@@ -92,11 +96,11 @@ ghost.init({
                 <ul>
 					{% block sagblok %}<li class="home current-menu-item nav-mobile-item"><a href="http://www.sumeyyeozkaynak.me/blog">Blog</a></li>{% endblock %}
                     {% block sol_content %}
-
+                        {% for topic in topic_list %}
+					        <li class="features  nav-mobile-item"><a href="{{ topic.get_absolute_url }}">{{ topic.name }}</a></li>
+                        {% endfor %}
                     {% endblock %}
-                    {% for topic in topic_list %}
-					<li class="features  nav-mobile-item"><a href="{{ topic.get_absolute_url }}">{{ topic.name }}</a></li>
-                    {% endfor %}
+
                 </ul>
             </nav>
             <div class="masonry-margin"></div>
