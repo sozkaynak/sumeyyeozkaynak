@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f06a719c-4c61-4a6d-8228-6ac4e306b03e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/templates/myworkandresearch/category.html" afterPath="$PROJECT_DIR$/templates/myworkandresearch/category.html" />
-      <change beforePath="$PROJECT_DIR$/templates/myworkandresearch/detail.html" afterPath="$PROJECT_DIR$/templates/myworkandresearch/detail.html" />
-      <change beforePath="$PROJECT_DIR$/templates/myworkandresearch/subject.html" afterPath="$PROJECT_DIR$/templates/myworkandresearch/subject.html" />
-    </list>
+    <list default="true" id="f06a719c-4c61-4a6d-8228-6ac4e306b03e" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/subject-ex.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="72" column="26" lean-forward="true" selection-start-line="64" selection-start-column="10" selection-end-line="73" selection-end-column="28" />
+              <caret line="72" column="26" lean-forward="false" selection-start-line="64" selection-start-column="10" selection-end-line="73" selection-end-column="28" />
               <folding>
                 <element signature="n#block#1;n#!!top" expanded="false" />
                 <element signature="n#for#1;n#!!top" expanded="false" />
@@ -49,17 +44,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="category.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="category.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/category.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="65" column="32" lean-forward="false" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
+            <state relative-caret-position="173">
+              <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1534010391381" expanded="true" signature="10109:10328" ph="{...}" />
-                <marker date="1534010391381" expanded="true" signature="10160:10200" ph="{...}" />
-                <marker date="1534010391381" expanded="true" signature="10589:10741" ph="{...}" />
-                <marker date="1534010391381" expanded="true" signature="10643:10737" ph="{...}" />
+                <marker date="1534010400670" expanded="true" signature="10077:10296" ph="{...}" />
+                <marker date="1534010400670" expanded="true" signature="10128:10168" ph="{...}" />
+                <marker date="1534010400670" expanded="true" signature="10557:10709" ph="{...}" />
+                <marker date="1534010400670" expanded="true" signature="10611:10705" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -69,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/category-ex.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="73" column="31" lean-forward="true" selection-start-line="73" selection-start-column="19" selection-end-line="82" selection-end-column="33" />
+              <caret line="73" column="31" lean-forward="false" selection-start-line="73" selection-start-column="19" selection-end-line="82" selection-end-column="33" />
               <folding>
                 <element signature="n#for#1;n#!!top" expanded="false" />
                 <element signature="n#block#3;n#!!top" expanded="false" />
@@ -78,18 +73,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="detail.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="97" column="10" lean-forward="false" selection-start-line="97" selection-start-column="10" selection-end-line="98" selection-end-column="101" />
+            <state relative-caret-position="138">
+              <caret line="55" column="102" lean-forward="false" selection-start-line="55" selection-start-column="102" selection-end-line="55" selection-end-column="102" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#for#3;n#!!top" expanded="false" />
-                <marker date="1534010241171" expanded="true" signature="10105:10324" ph="{...}" />
-                <marker date="1534010241171" expanded="true" signature="10156:10196" ph="{...}" />
-                <marker date="1534010241171" expanded="true" signature="10585:10737" ph="{...}" />
-                <marker date="1534010241171" expanded="true" signature="10639:10733" ph="{...}" />
+                <marker date="1534011443933" expanded="true" signature="10104:10323" ph="{...}" />
+                <marker date="1534011443933" expanded="true" signature="10155:10195" ph="{...}" />
+                <marker date="1534011443933" expanded="true" signature="10584:10736" ph="{...}" />
+                <marker date="1534011443933" expanded="true" signature="10638:10732" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -99,7 +94,7 @@
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-678">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="28" selection-end-column="93" />
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="28" selection-end-column="93" />
               <folding />
             </state>
           </provider>
@@ -109,7 +104,7 @@
         <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/detail-ex.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="307">
-              <caret line="52" column="33" lean-forward="true" selection-start-line="44" selection-start-column="21" selection-end-line="52" selection-end-column="33" />
+              <caret line="52" column="33" lean-forward="false" selection-start-line="44" selection-start-column="21" selection-end-line="52" selection-end-column="33" />
               <folding>
                 <element signature="n#block#1;n#!!top" expanded="false" />
                 <element signature="n#for#4;n#!!top" expanded="false" />
@@ -233,9 +228,9 @@
         <option value="$PROJECT_DIR$/templates/myworkandresearch/detail3.html" />
         <option value="$PROJECT_DIR$/templates/myworkandresearch/subject.py" />
         <option value="$PROJECT_DIR$/myworkandresearch/views.py" />
-        <option value="$PROJECT_DIR$/templates/myworkandresearch/detail.html" />
         <option value="$PROJECT_DIR$/templates/myworkandresearch/subject.html" />
         <option value="$PROJECT_DIR$/templates/myworkandresearch/category.html" />
+        <option value="$PROJECT_DIR$/templates/myworkandresearch/detail.html" />
       </list>
     </option>
   </component>
@@ -245,9 +240,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-15" />
-    <option name="y" value="31" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="105" />
     <option name="width" value="1386" />
     <option name="height" value="773" />
   </component>
@@ -425,7 +420,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
+    <frame x="-8" y="105" width="1386" height="773" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -433,8 +428,8 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32695374" sideWeight="0.4966722" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.036682617" sideWeight="0.7699849" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16214179" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14285715" sideWeight="0.7699849" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16165413" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -810,7 +805,7 @@
     <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/detail-ex.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
-          <caret line="52" column="33" lean-forward="true" selection-start-line="44" selection-start-column="21" selection-end-line="52" selection-end-column="33" />
+          <caret line="52" column="33" lean-forward="false" selection-start-line="44" selection-start-column="21" selection-end-line="52" selection-end-column="33" />
           <folding>
             <element signature="n#block#1;n#!!top" expanded="false" />
             <element signature="n#for#4;n#!!top" expanded="false" />
@@ -818,25 +813,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="97" column="10" lean-forward="false" selection-start-line="97" selection-start-column="10" selection-end-line="98" selection-end-column="101" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#for#3;n#!!top" expanded="false" />
-            <marker date="1534010241171" expanded="true" signature="10105:10324" ph="{...}" />
-            <marker date="1534010241171" expanded="true" signature="10156:10196" ph="{...}" />
-            <marker date="1534010241171" expanded="true" signature="10585:10737" ph="{...}" />
-            <marker date="1534010241171" expanded="true" signature="10639:10733" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/subject-ex.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="72" column="26" lean-forward="true" selection-start-line="64" selection-start-column="10" selection-end-line="73" selection-end-column="28" />
+          <caret line="72" column="26" lean-forward="false" selection-start-line="64" selection-start-column="10" selection-end-line="73" selection-end-column="28" />
           <folding>
             <element signature="n#block#1;n#!!top" expanded="false" />
             <element signature="n#for#1;n#!!top" expanded="false" />
@@ -848,7 +828,7 @@
     <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/category-ex.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="73" column="31" lean-forward="true" selection-start-line="73" selection-start-column="19" selection-end-line="82" selection-end-column="33" />
+          <caret line="73" column="31" lean-forward="false" selection-start-line="73" selection-start-column="19" selection-end-line="82" selection-end-column="33" />
           <folding>
             <element signature="n#for#1;n#!!top" expanded="false" />
             <element signature="n#block#3;n#!!top" expanded="false" />
@@ -859,7 +839,7 @@
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-678">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="28" selection-end-column="93" />
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="28" selection-end-column="93" />
           <folding />
         </state>
       </provider>
@@ -880,14 +860,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/category.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="65" column="32" lean-forward="false" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
+        <state relative-caret-position="173">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1534010391381" expanded="true" signature="10109:10328" ph="{...}" />
-            <marker date="1534010391381" expanded="true" signature="10160:10200" ph="{...}" />
-            <marker date="1534010391381" expanded="true" signature="10589:10741" ph="{...}" />
-            <marker date="1534010391381" expanded="true" signature="10643:10737" ph="{...}" />
+            <marker date="1534010400670" expanded="true" signature="10077:10296" ph="{...}" />
+            <marker date="1534010400670" expanded="true" signature="10128:10168" ph="{...}" />
+            <marker date="1534010400670" expanded="true" signature="10557:10709" ph="{...}" />
+            <marker date="1534010400670" expanded="true" signature="10611:10705" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="55" column="102" lean-forward="false" selection-start-line="55" selection-start-column="102" selection-end-line="55" selection-end-column="102" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#for#3;n#!!top" expanded="false" />
+            <marker date="1534011443933" expanded="true" signature="10104:10323" ph="{...}" />
+            <marker date="1534011443933" expanded="true" signature="10155:10195" ph="{...}" />
+            <marker date="1534011443933" expanded="true" signature="10584:10736" ph="{...}" />
+            <marker date="1534011443933" expanded="true" signature="10638:10732" ph="{...}" />
           </folding>
         </state>
       </provider>
