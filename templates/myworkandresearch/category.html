@@ -1,113 +1,119 @@
-{% extends 'base.html' %}
+
 {% load static %}
-{% block body_name %} class="" {% endblock %}
-{% block header %}
-    {% for category in categories %}
-    <a class="page-link" href="{%  url 'myworkandresearch:category' category_slug=category.slug %}">{{ category.name }}</a>
-    {% endfor %}
-    <a class="page-link" href="https://medium.com/@sumozkaynak">Medium</a>
-    <a class="page-link" href="https://github.com/sozkaynak">GitHub</a>
-{% endblock %}
-{% block content %}
-<!-- Page Content -->
-    <div class="container-fluid contents">
-<!-- Content Row -->
-      <div class="row">
-            <!-- Sidebar Column -->
-          {% for category in categories%}
-          <div id="side-nav-container" class="col-sm-3">
-          <ul id="mysidebar" class="nav">
-             {% for subject in category.subject_set.all %}
-              <li class="sidebar-title">
-
-                  <a href="{% url 'myworkandresearch:subject' category_slug=category.slug subject_slug=subject.slug %}"style="color:black ">
-                    <li>{{subject.name}}</li>
-                  </a>
-              </li>
-
-                    <ul class="sidebar-items">
-                        {% for article in subject.article_set.all %}
-                      <li>
-
-                            <a href="{% url 'myworkandresearch:detail' category_slug=category.slug subject_slug=subject.slug article_slug=article.slug %}" style="color:darkgray ">{{article.title}}</a>
-
-                      </li>
-                        {% endfor %}
-                    </ul>
-
-              {% endfor %}
-          </ul>
-        </div>
-
-      {% endfor %}
-            <!-- Content Column -->
-            <div class="col-sm-9 main-contents">
-                     <div class="main-contents-body">
-                    {% if category.name %}
-                        <article class="post-content">
-                <header class="post-header">
-              <!-- <div class="btn-group contribute" role="group">
-                 <a href="https://github.com/flutter/website/blob/master/gestures.md" class="btn btn-sm">
-                    <i class="fa fa-pencil"></i> Edit Source
-                 </a>
-                 <a href="https://github.com/flutter/flutter/issues/new?title=Issue from website page Taps, drags, and other gestures in Flutter&body=From URL: https://flutter.io/gestures.md&labels=dev: docs - website" class="btn btn-sm">
-                    <i class="fa fa-github"></i> File Issue
-                 </a>
-              </div>-->
-              <div>
-                <h1 class="post-title">{{category.name}} </h1>
-              </div>
-           </header>
-              <!--
-              <ul id="markdown-toc">
-              <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
-              <li><a href="#pointers" id="markdown-toc-pointers">Pointers</a></li>
-              <li><a href="#gestures" id="markdown-toc-gestures">Gestures</a>    <ul>
-                  <li><a href="#gesture-disambiguation" id="markdown-toc-gesture-disambiguation">Gesture disambiguation</a></li>
-                </ul>
-              </li>
-            </ul>
-              -->
-
-                {{category.text|safe}}
-            </article>
-                    {% endif %}
-                     <!--Category Yorum sistemi 5.0 (end) -->
-                     <h3>Yorum Ekle:</h3>
-                    {% include 'myworkandresearch/comment.html' %}
-                     <hr>
-                     {% for comment in category.categorys.all %}
-                        <h4>{{ comment.name }}| <small style="color: grey">{{ comment.created_date|timesince }} önce</small></h4>
-                        <p>{{ comment.content|linebreaks }}</p>
-                        <hr/>
-                     {% endfor %}
-                 </div>
-
-             </div>
-      </div>
-    </div><!-- /.row -->
-    </div><!-- /.container -->
-{% endblock %}
-{% block footer %}
-<footer class="site-footer">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="logo">
-                    <img src="{% static 'images/logoweb.png' %}" alt="Logo" width="100" height="100">
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>{{ category.name }}</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Sümeyye Özkaynak">
+        <link rel="stylesheet" href="https://docs.duckduckhack.com/gitbook/style.css">
+        <link rel="stylesheet" href="https://docs.duckduckhack.com/gitbook/gitbook-plugin-comment/plugin.css">
+        <link rel="stylesheet" href="https://docs.duckduckhack.com/gitbook/gitbook-plugin-highlight/website.css">
+        <link rel="stylesheet" href="https://docs.duckduckhack.com/gitbook/gitbook-plugin-search/search.css">
+        <link rel="stylesheet" href="https://docs.duckduckhack.com/gitbook/gitbook-plugin-fontsettings/website.css">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://docs.duckduckhack.com/gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="{% static 'images/logoweb.png' %}" type="image/x-icon">
+    </head>
+    <body>
+        <div class="book">
+            <div class="book-summary">
+                <div id="book-search-input" role="search" style="text-align: center">
+                    <div class="logo">
+                      <img src="{% static 'images/logoweb.png' %}" alt="Logo" width="40" height="40" >
+                    </div>
                 </div>
-                <p class="site-footer__link-list">
-                    <a href="https://medium.com/@sumozkaynak">Medium@</a> &bull;
-                    <a href="https://github.com/sozkaynak/">github</a> &bull;
-                    <a href="https://twitter.com/sumeyyeozkaynak">twitter</a> &bull;
-                    <a href="https://instagram.com/afafet">instagram</a>
-                </p>
-                <p class="licenses">
-                         “Allah’tan,kulları arasında ancak bilginler korkar.” FATIR/28- <br>
-                         “İlim elde etmek her Müslüman kadına ve erkeğe farzdır.”
-                      </p>
+                <nav role="navigation">
+                    <ul class="summary">
+                        <li><a href="http://sumeyyeozkaynak.me/hakkımda" target="_blank" class="custom-link"><b>Hakkımda</b></a></li>
+                        <li><a href="http://sumeyyeozkaynak.me/myworkandresearch" target="_blank" class="custom-link"><b>My Work & Research</b></a></li>
+                        <li><a href="http://sumeyyeozkaynak.me/blog/" target="_blank" class="custom-link"><b>Blog</b></a></li>
+                        <li class="divider"></li>
+                        {% for category in categories%}
+                            {% for subject in category.subject_set.all %}
+                                <li class="chapter " data-level="1.1" data-path="../"><a href="{% url 'myworkandresearch:subject' category_slug=category.slug subject_slug=subject.slug %}" target="_blank" class="custom-link">{{subject.name}}</a>
+                            <ul class="articles">
+                                {% for article in subject.article_set.all %}
+                                    <li class="chapter " data-level="1.1.1" data-path="../welcome/determining-ia-type.html"><a href="{% url 'myworkandresearch:detail' category_slug=category.slug subject_slug=subject.slug article_slug=article.slug %}">{{article.title}}</a></li>
+                                {% endfor %}
+                            </ul>
+                            {% endfor %}
+                        {% endfor %}
+                        </li>
+                    </ul>
+                </nav>
             </div>
+            <div class="book-body">
+                <div class="body-inner">
+                    <div class="book-header" role="navigation">
+                        <!-- Title -->
+                        <h1><i class="fa fa-circle-o-notch fa-spin"></i><a href=".." >{{ category.name }}</a></h1>
+                    </div>
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            <div id="book-search-results">
+                                <div class="search-noresults">
+                                    <section class="normal markdown-section">
+                                        <h1 id="how-to-make-an-api-based-random-person-generator">{{ category.name }}</h1>
+                                        <p>{{ category.text|safe }}</p>
+                                    </section>
+                                </div>
+                                <div class="search-results">
+                                    <div class="has-results">
+                                        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+                                        <ul class="search-results-list"></ul>
+                                    </div>
+                                    <div class="no-results">
+                                        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                var gitbook = gitbook || [];
+                gitbook.push(function() {
+                    gitbook.page.hasChanged({"page":{"title":"Make an API-Based Generator [VIDEO]","level":"1.2.5","depth":2,"next":{"title":"Submitting Instant Answers","level":"1.3","depth":1,"path":"submitting/section.md","ref":"submitting/section.md","articles":[{"title":"Going Live","level":"1.3.1","depth":2,"path":"submitting/submitting-overview.md","ref":"submitting/submitting-overview.md","articles":[]},{"title":"Instant Answer Production Guidelines","level":"1.3.2","depth":2,"path":"submitting/checklist.md","ref":"submitting/checklist.md","articles":[]},{"title":"How to Submit a Pull Request","level":"1.3.3","depth":2,"path":"submitting/pull-request.md","ref":"submitting/pull-request.md","articles":[]}]},"previous":{"title":"Make an API-Based Lookup","level":"1.2.4","depth":2,"path":"walkthroughs/forum-lookup.md","ref":"walkthroughs/forum-lookup.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchorjs","comment"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchorjs":{"placement":"left","visible":"always"},"comment":{"highlightCommented":true},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"github":"duckduckgo/duckduckhack-docs","theme":"default","author":"DuckDuckHack","pdf":{"pageNumbers":true,"fontSize":16,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"ddh-intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"slackURL":"https://quackslack.herokuapp.com","forumURL":"https://forum.duckduckhack.com","meetupURL":"http://www.meetup.com/topics/duckduckgo/","twitterURL":"https://twitter.com/duckduckhack/","email":"open@duckduckgo.com"},"title":"DuckDuckHack Docs","language":"en","links":{"sidebar":{"DuckDuckHack Docs":"https://www.gitbook.com/book/duckduckhack/duckduckhack-docs"},"gitbook":true},"gitbook":"*","description":"Docs for building an Instant Answer on the DuckDuckGo search engine."},"file":{"path":"walkthroughs/random-person-screencast.md","mtime":"2017-10-30T21:16:36.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-30T21:24:08.892Z"},"basePath":"..","book":{"language":""}});
+                });
+            </script>
         </div>
-    </div>
-</footer>
-{% endblock %}
+        <script src="https://docs.duckduckhack.com/gitbook/gitbook.js"></script>
+        <script src="https://docs.duckduckhack.com/gitbook/theme.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.1.1/anchor.min.js"></script>
+        <script src="https://docs.duckduckhack.com/gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        <script src="https://docs.duckduckhack.com/gitbook/gitbook-plugin-comment/plugin.js"></script>
+        <script src="https://docs.duckduckhack.com/gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="https://docs.duckduckhack.com/gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="https://docs.duckduckhack.com/gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="https://docs.duckduckhack.com/gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="https://docs.duckduckhack.com/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="https://docs.duckduckhack.com/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <div><script style="display: none;" type="application/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57505611-7', 'auto', {name: 'microcdn'});
+  ga('microcdn.send', 'pageview');
+
+  var _cdn_prev_loc = window.location.pathname;
+  window.setInterval(function () {
+    if (window.location.pathname !== _cdn_prev_loc) {
+      _cdn_prev_loc = window.location.pathname;
+      ga('microcdn.send', 'pageview');
+    }
+  }, 100);
+
+</script></div>
+    </body>
+</html>
+

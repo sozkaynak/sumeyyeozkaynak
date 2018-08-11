@@ -46,65 +46,47 @@
 </head>
 
   <body {% block body_name %} {% endblock %}>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-ND4LWWZ" eight="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) -->
+  <header class="site-header">
+            <div class="container-fluid header-contents">
+                <div class="row">
+                    <div class="col-md-12">
+                        <i class="fa fa-bars" id="sidebar-toggle-button" aria-hidden="true" style="display:none"></i>
+                        <img src="{% static 'images/logoweb.png' %}" alt="logo.png" width="40" height="40" style="vertical-align:middle">
+                        <a class="site-title" href="http://www.sumeyyeozkaynak.me/myworkandresearch">Sümeyye Özkaynak</a>
+                        <nav class="site-nav">
+                            <a href="#" class="menu-icon">
+                                <i class="material-icons-extended">more_vert</i>
+                            </a>
+                            <div class="trigger">
+                                {% block header %} {% endblock %}
+                                <form action="/search/" class="nav-searchbox" id="cse-search-box" style="display: inline">
+                                    <input type="hidden" name="cx" value="007067728241810524621:gm6vraqlc8c">
+                                    <input type="hidden" name="ie" value="UTF-8">
+                                    <input type="hidden" name="hl" value="en">
+                                    <input type="search" name="q" id="q" autocomplete="off" placeholder="Search">
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </header>
 
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-ND4LWWZ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  {% block content %}{% endblock %}
 
+  {% block footer %}{% endblock %}
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-        <header class="site-header">
-  <div class="container-fluid header-contents">
-    <div class="row">
-      <div class="col-md-12">
-
-        <i class="fa fa-bars" id="sidebar-toggle-button" aria-hidden="true" style="display:none"></i>
-        <img src="{% static 'images/logoweb.png' %}" alt="logo.png" width="40" height="40" style="vertical-align:middle">
-
-        <a class="site-title" href="/">Sümeyye Özkaynak</a>
-
-        <nav class="site-nav">
-          <a href="#" class="menu-icon">
-            <i class="material-icons-extended">more_vert</i>
-          </a>
-          <div class="trigger">
-
-             {% block header %} {% endblock %}
-
-            <form action="/search/" class="nav-searchbox" id="cse-search-box" style="display: inline">
-              <input type="hidden" name="cx" value="007067728241810524621:gm6vraqlc8c">
-              <input type="hidden" name="ie" value="UTF-8">
-              <input type="hidden" name="hl" value="en">
-              <input type="search" name="q" id="q" autocomplete="off" placeholder="Search">
-            </form>
-          </div>
-        </nav>
-      </div>
-    </div> <!-- /.row -->
-  </div> <!-- /.container -->
-</header>
-
-        {% block content %}
-
-        {% endblock %}
-
-        {% block footer %}
-
-        {% endblock %}
-
-
-
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-    <script type="text/javascript" src="{% static "ckeditor/ckeditor-init.js" %}"></script>
-    <script type="text/javascript" src="{% static "ckeditor/ckeditor/ckeditor.js" %}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="{% static 'js/sidebar_toggle.js' %}"></script>
-    <script src="{% static 'js/customscripts.js' %}"></script>
-    <script src="{% static 'js/prism.js' %}"></script>
-    <script src="{% static 'js/tabs.js' %}"></script>
-
-    <script async="" defer="" src="//survey.g.doubleclick.net/async_survey?site=at3ul57xpub2vk3oxt2ytw365i"></script>
+  <script type="text/javascript" src="{% static "ckeditor/ckeditor-init.js" %}"></script>
+  <script type="text/javascript" src="{% static "ckeditor/ckeditor/ckeditor.js" %}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="{% static 'js/sidebar_toggle.js' %}"></script>
+  <script src="{% static 'js/customscripts.js' %}"></script>
+  <script src="{% static 'js/prism.js' %}"></script>
+  <script src="{% static 'js/tabs.js' %}"></script>
+  <script async="" defer="" src="//survey.g.doubleclick.net/async_survey?site=at3ul57xpub2vk3oxt2ytw365i"></script>
   </body>
 </html>

@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body_name %} class="data-gr-c-s-loaded="true" cz-shortcut-listen="true" " {% endblock %}
+{% block header %}
+   {% for category in categories %}
+    <a class="page-link" href="{%  url 'myworkandresearch:category' category_slug=category.slug %}">{{ category.name }}</a>
+    {% endfor %}
+    <a class="page-link" href="https://medium.com/@sumozkaynak">Medium</a>
+    <a class="page-link" href="https://github.com/sozkaynak">GitHub</a>
+{% endblock %}
+{% block content %}
+    <!-- Page Content -->
+    <div class="container-fluid contents">
+        <!-- Content Row -->
+      <div class="row">
+          <!-- Sidebar Column -->
+          {% for category in categories%}
+          <div id="side-nav-container" class="col-sm-3">
+          <ul id="mysidebar" class="nav">
+              {% for subject in category.subject_set.all %}
+              <li class="sidebar-title"><a href="{% url 'myworkandresearch:subject' category_slug=category.slug subject_slug=subject.slug %}" style="color:black "> <li>{{subject.name}}</li></a></li>
+
+                    <ul class="sidebar-items">
+                        {% for article in subject.article_set.all %}
+                      <li>
+                            <a href="{% url 'myworkandresearch:detail' category_slug=category.slug subject_slug=subject.slug article_slug=article.slug %}" style="color:darkgray">{{article.title}}</a>
+                      </li>
+                        {% endfor %}
+                    </ul>
+              {% endfor %}
+          </ul>
+        </div>
+         {% endfor %}
+          <!-- Content Column -->
+            <div class="col-sm-9 main-contents">
+                <div class="main-contents-body">
+                    {% if article.title %}
+                     <article class="post-content">
+                         <header class="post-header">
+                             <div><h1 class="post-title">{{article.title}}</h1></div>
+                         </header>
+                         <p>{{article.text|safe}}</p>
+                     </article>
+                    {% endif %}
+                     <!--Article Yorum sistemi 5.0 (end)-->
+                    <h3>Yorum Ekle:</h3>
+                    {% include 'myworkandresearch/comment.html' %}
+                     <hr>
+                     {% for comment in article.comments.all %}
+                         <h4>{{ comment.name }}| <small style="color: grey">{{ comment.created_date|timesince }} önce</small></h4>
+                         <p>{{ comment.content|linebreaks }}</p>
+                         <hr/>
+                     {% endfor %}
+                </div>
+
+             </div>
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+
+
+{% endblock %}
+{% block footer %}
+    <footer class="site-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="logo">
+                      <img src="{% static 'images/logoweb.png' %}" alt="Logo" width="100" height="100">
+                    </div>
+                      <p class="site-footer__link-list">
+                        <a href="https://medium.com/@sumozkaynak">Medium@</a> &bull;
+                        <a href="https://github.com/sozkaynak/">github</a> &bull;
+                        <a href="https://twitter.com/sumeyyeozkaynak">twitter</a> &bull;
+                        <a href="https://instagram.com/afafet">instagram</a>
+                      </p>
+
+                      <p class="licenses">
+                         “Allah’tan,kulları arasında ancak bilginler korkar.” FATIR/28- <br>
+                         “İlim elde etmek her Müslüman kadına ve erkeğe farzdır.”
+                      </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+{% endblock %}
