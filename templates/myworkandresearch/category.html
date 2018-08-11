@@ -63,6 +63,16 @@
                                         <h1 id="how-to-make-an-api-based-random-person-generator">{{ category.name }}</h1>
                                         <p>{{ category.text|safe }}</p>
                                     </section>
+
+                     <!--Category Yorum sistemi 5.0 (end) -->
+                     <h3>Yorum Ekle:</h3>
+                    {% include 'myworkandresearch/comment.html' %}
+                     <hr>
+                     {% for comment in category.categorys.all %}
+                        <h4>{{ comment.name }}| <small style="color: grey">{{ comment.created_date|timesince }} önce</small></h4>
+                        <p>{{ comment.content|linebreaks }}</p>
+                        <hr/>
+                     {% endfor %}
                                 </div>
                                 <div class="search-results">
                                     <div class="has-results">
@@ -85,6 +95,9 @@
                 });
             </script>
         </div>
+
+  <script type="text/javascript" src="{% static "ckeditor/ckeditor-init.js" %}"></script>
+  <script type="text/javascript" src="{% static "ckeditor/ckeditor/ckeditor.js" %}"></script>
         <script src="https://docs.duckduckhack.com/gitbook/gitbook.js"></script>
         <script src="https://docs.duckduckhack.com/gitbook/theme.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.1.1/anchor.min.js"></script>

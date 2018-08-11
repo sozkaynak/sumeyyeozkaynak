@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f06a719c-4c61-4a6d-8228-6ac4e306b03e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/myworkandresearch/subject-ex.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change beforePath="$PROJECT_DIR$/templates/myworkandresearch/category.html" afterPath="$PROJECT_DIR$/templates/myworkandresearch/category-ex.html" />
-      <change beforePath="$PROJECT_DIR$/templates/myworkandresearch/detail.html" afterPath="$PROJECT_DIR$/templates/myworkandresearch/detail-ex.html" />
+      <change beforePath="$PROJECT_DIR$/templates/myworkandresearch/category.html" afterPath="$PROJECT_DIR$/templates/myworkandresearch/category.html" />
+      <change beforePath="$PROJECT_DIR$/templates/myworkandresearch/detail.html" afterPath="$PROJECT_DIR$/templates/myworkandresearch/detail.html" />
       <change beforePath="$PROJECT_DIR$/templates/myworkandresearch/subject.html" afterPath="$PROJECT_DIR$/templates/myworkandresearch/subject.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,46 +22,97 @@
       <file leaf-file-name="subject.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/subject.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="27" column="98" lean-forward="false" selection-start-line="27" selection-start-column="98" selection-end-line="27" selection-end-column="98" />
+            <state relative-caret-position="308">
+              <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1534009194992" expanded="true" signature="9365:9584" ph="{...}" />
-                <marker date="1534009194992" expanded="true" signature="9416:9456" ph="{...}" />
-                <marker date="1534009194992" expanded="true" signature="9845:9997" ph="{...}" />
-                <marker date="1534009194992" expanded="true" signature="9899:9993" ph="{...}" />
+                <marker date="1534010368783" expanded="true" signature="10051:10270" ph="{...}" />
+                <marker date="1534010368783" expanded="true" signature="10102:10142" ph="{...}" />
+                <marker date="1534010368783" expanded="true" signature="10531:10683" ph="{...}" />
+                <marker date="1534010368783" expanded="true" signature="10585:10679" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="category.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="subject-ex.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/subject-ex.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="72" column="26" lean-forward="true" selection-start-line="64" selection-start-column="10" selection-end-line="73" selection-end-column="28" />
+              <folding>
+                <element signature="n#block#1;n#!!top" expanded="false" />
+                <element signature="n#for#1;n#!!top" expanded="false" />
+                <element signature="n#block#3;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/category.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="28" column="98" lean-forward="false" selection-start-line="28" selection-start-column="98" selection-end-line="28" selection-end-column="98" />
+            <state relative-caret-position="187">
+              <caret line="65" column="32" lean-forward="false" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1534009195081" expanded="true" signature="9371:9590" ph="{...}" />
-                <marker date="1534009195081" expanded="true" signature="9422:9462" ph="{...}" />
-                <marker date="1534009195081" expanded="true" signature="9851:10003" ph="{...}" />
-                <marker date="1534009195081" expanded="true" signature="9905:9999" ph="{...}" />
+                <marker date="1534010391381" expanded="true" signature="10109:10328" ph="{...}" />
+                <marker date="1534010391381" expanded="true" signature="10160:10200" ph="{...}" />
+                <marker date="1534010391381" expanded="true" signature="10589:10741" ph="{...}" />
+                <marker date="1534010391381" expanded="true" signature="10643:10737" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="category-ex.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/category-ex.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="73" column="31" lean-forward="true" selection-start-line="73" selection-start-column="19" selection-end-line="82" selection-end-column="33" />
+              <folding>
+                <element signature="n#for#1;n#!!top" expanded="false" />
+                <element signature="n#block#3;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="28" column="98" lean-forward="false" selection-start-line="28" selection-start-column="98" selection-end-line="28" selection-end-column="98" />
+            <state relative-caret-position="121">
+              <caret line="97" column="10" lean-forward="false" selection-start-line="97" selection-start-column="10" selection-end-line="98" selection-end-column="101" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1534009195237" expanded="true" signature="9371:9590" ph="{...}" />
-                <marker date="1534009195237" expanded="true" signature="9422:9462" ph="{...}" />
-                <marker date="1534009195237" expanded="true" signature="9851:10003" ph="{...}" />
-                <marker date="1534009195237" expanded="true" signature="9905:9999" ph="{...}" />
+                <element signature="n#for#3;n#!!top" expanded="false" />
+                <marker date="1534010241171" expanded="true" signature="10105:10324" ph="{...}" />
+                <marker date="1534010241171" expanded="true" signature="10156:10196" ph="{...}" />
+                <marker date="1534010241171" expanded="true" signature="10585:10737" ph="{...}" />
+                <marker date="1534010241171" expanded="true" signature="10639:10733" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-678">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="28" selection-end-column="93" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail-ex.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/detail-ex.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="52" column="33" lean-forward="true" selection-start-line="44" selection-start-column="21" selection-end-line="52" selection-end-column="33" />
+              <folding>
+                <element signature="n#block#1;n#!!top" expanded="false" />
+                <element signature="n#for#4;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -184,9 +233,9 @@
         <option value="$PROJECT_DIR$/templates/myworkandresearch/detail3.html" />
         <option value="$PROJECT_DIR$/templates/myworkandresearch/subject.py" />
         <option value="$PROJECT_DIR$/myworkandresearch/views.py" />
+        <option value="$PROJECT_DIR$/templates/myworkandresearch/detail.html" />
         <option value="$PROJECT_DIR$/templates/myworkandresearch/subject.html" />
         <option value="$PROJECT_DIR$/templates/myworkandresearch/category.html" />
-        <option value="$PROJECT_DIR$/templates/myworkandresearch/detail.html" />
       </list>
     </option>
   </component>
@@ -196,7 +245,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-15" />
     <option name="y" value="31" />
     <option name="width" value="1386" />
@@ -376,19 +425,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18022329" sideWeight="0.23001508" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32695374" sideWeight="0.4966722" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32695374" sideWeight="0.4966722" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06539075" sideWeight="0.7699849" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07669173" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.036682617" sideWeight="0.7699849" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16214179" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39872408" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -400,28 +449,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28229666" sideWeight="0.4969834" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18022329" sideWeight="0.23001508" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32695374" sideWeight="0.4966722" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1770335" sideWeight="0.7699849" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23076923" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32376397" sideWeight="0.4969834" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39872408" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -732,17 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/category-ex.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="71" column="36" lean-forward="false" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
-          <folding>
-            <element signature="n#for#1;n#!!top" expanded="false" />
-            <element signature="n#block#3;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -773,26 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="91" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/subject-ex.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="25" />
-          <folding>
-            <element signature="n#block#1;n#!!top" expanded="false" />
-            <element signature="n#for#1;n#!!top" expanded="false" />
-            <element signature="n#block#3;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/subject.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -813,8 +809,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/detail-ex.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="68" column="26" lean-forward="false" selection-start-line="66" selection-start-column="20" selection-end-line="68" selection-end-column="26" />
+        <state relative-caret-position="307">
+          <caret line="52" column="33" lean-forward="true" selection-start-line="44" selection-start-column="21" selection-end-line="52" selection-end-column="33" />
           <folding>
             <element signature="n#block#1;n#!!top" expanded="false" />
             <element signature="n#for#4;n#!!top" expanded="false" />
@@ -822,44 +818,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/subject.html">
+    <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="27" column="98" lean-forward="false" selection-start-line="27" selection-start-column="98" selection-end-line="27" selection-end-column="98" />
+        <state relative-caret-position="121">
+          <caret line="97" column="10" lean-forward="false" selection-start-line="97" selection-start-column="10" selection-end-line="98" selection-end-column="101" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1534009194992" expanded="true" signature="9365:9584" ph="{...}" />
-            <marker date="1534009194992" expanded="true" signature="9416:9456" ph="{...}" />
-            <marker date="1534009194992" expanded="true" signature="9845:9997" ph="{...}" />
-            <marker date="1534009194992" expanded="true" signature="9899:9993" ph="{...}" />
+            <element signature="n#for#3;n#!!top" expanded="false" />
+            <marker date="1534010241171" expanded="true" signature="10105:10324" ph="{...}" />
+            <marker date="1534010241171" expanded="true" signature="10156:10196" ph="{...}" />
+            <marker date="1534010241171" expanded="true" signature="10585:10737" ph="{...}" />
+            <marker date="1534010241171" expanded="true" signature="10639:10733" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/subject-ex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="72" column="26" lean-forward="true" selection-start-line="64" selection-start-column="10" selection-end-line="73" selection-end-column="28" />
+          <folding>
+            <element signature="n#block#1;n#!!top" expanded="false" />
+            <element signature="n#for#1;n#!!top" expanded="false" />
+            <element signature="n#block#3;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/category-ex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="73" column="31" lean-forward="true" selection-start-line="73" selection-start-column="19" selection-end-line="82" selection-end-column="33" />
+          <folding>
+            <element signature="n#for#1;n#!!top" expanded="false" />
+            <element signature="n#block#3;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-678">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="28" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/subject.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1534010368783" expanded="true" signature="10051:10270" ph="{...}" />
+            <marker date="1534010368783" expanded="true" signature="10102:10142" ph="{...}" />
+            <marker date="1534010368783" expanded="true" signature="10531:10683" ph="{...}" />
+            <marker date="1534010368783" expanded="true" signature="10585:10679" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/category.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="28" column="98" lean-forward="false" selection-start-line="28" selection-start-column="98" selection-end-line="28" selection-end-column="98" />
+        <state relative-caret-position="187">
+          <caret line="65" column="32" lean-forward="false" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1534009195081" expanded="true" signature="9371:9590" ph="{...}" />
-            <marker date="1534009195081" expanded="true" signature="9422:9462" ph="{...}" />
-            <marker date="1534009195081" expanded="true" signature="9851:10003" ph="{...}" />
-            <marker date="1534009195081" expanded="true" signature="9905:9999" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/myworkandresearch/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="28" column="98" lean-forward="false" selection-start-line="28" selection-start-column="98" selection-end-line="28" selection-end-column="98" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1534009195237" expanded="true" signature="9371:9590" ph="{...}" />
-            <marker date="1534009195237" expanded="true" signature="9422:9462" ph="{...}" />
-            <marker date="1534009195237" expanded="true" signature="9851:10003" ph="{...}" />
-            <marker date="1534009195237" expanded="true" signature="9905:9999" ph="{...}" />
+            <marker date="1534010391381" expanded="true" signature="10109:10328" ph="{...}" />
+            <marker date="1534010391381" expanded="true" signature="10160:10200" ph="{...}" />
+            <marker date="1534010391381" expanded="true" signature="10589:10741" ph="{...}" />
+            <marker date="1534010391381" expanded="true" signature="10643:10737" ph="{...}" />
           </folding>
         </state>
       </provider>
