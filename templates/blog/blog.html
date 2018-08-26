@@ -19,7 +19,7 @@
             <div class="featured-post-label rotate">En Son</div>
             <h2><a href="{{ post_last.get_absolute_url }}">{{ post_last.title }}</a></h2>
             <div class="item-meta post">
-                <a href="http://www.sumeyyeozkaynak.me/hakkimda" class="author-image item-image" style="background-image: url('{% static 'images/user-photo.png' %}')"></a>
+                <a href="http://www.sumeyyeozkaynak.me/hakkimda" class="author-image item-image" style="background-image: url('{% static 'images/user.jpg' %}')"></a>
                 <a href="http://www.sumeyyeozkaynak.me/hakkimda">{{ post_last.author }}</a>
                 <br>
                 <time datetime="2017-02-05"> Yayınlanma tarihi {{ post_last.published_date}}</time>
@@ -61,7 +61,7 @@
                                 <p>{{ post_six.text|safe|truncatewords:25 }}</p>
                             </div>
                             <div class="item-meta">
-                                    <a href="" class="author-image item-image" style="background-image: url('{% static 'images/user-photo.png' %}')"></a>
+                                    <a href="" class="author-image item-image" style="background-image: url('{% static 'images/user.jpg' %}')"></a>
                                     <a href="">{{ post_six.user }}</a> tarafından yazıldı
                                     <br>
                                     <time datetime="{{ post_six.published_date }}"> {{ post_six.published_date| timesince }} önce</time>
@@ -80,7 +80,7 @@
                                     <p style="color:#fff">{{ post_five.text|safe|truncatewords:25 }}</p>
                                 </div>
                                 <div class="item-meta">
-                                    <a href="" class="author-image item-image" style="background-image: url('{% static 'images/user-photo.png' %}')"></a>
+                                    <a href="" class="author-image item-image" style="background-image: url('{% static 'images/user.jpg' %}')"></a>
                                     <a href="">{{ post_five.user }}</a>  tarafından yazıldı
                                     <br>
                                     <time datetime="{{ post_five.published_date }}"> {{ post_five.published_date|timesince }} önce</time>
@@ -107,7 +107,7 @@
                                     <p>{{ post_four.text|safe|truncatewords:25 }}</p>
                                 </div>
                                 <div class="item-meta">
-                                    <a href="" class="author-image item-image" style="background-image: url('{% static 'images/user-photo.png' %}')"></a>
+                                    <a href="" class="author-image item-image" style="background-image: url('{% static 'images/user.jpg' %}')"></a>
                                     <a href="">{{ post_four.user }} </a> tarafından yazıldı
                                     <br>
                                     <time datetime="{{ post_four.published_date|timesince }}"> {{ post_four.published_date |timesince }} önce</time>
@@ -134,7 +134,7 @@
                                     <p style="color:#fff"> {{ post_three.text| safe | truncatewords:25 }}</p>
                                 </div>
                                 <div class="item-meta">
-                                    <a href="" class="author-image item-image" style="background-image: url('{% static 'images/user-photo.png' %}')"></a>
+                                    <a href="" class="author-image item-image" style="background-image: url('{% static 'images/user.jpg' %}')"></a>
                                     <a href="">{{ post_three.user }} tarafından yazıldı
                                     <br>
                                     <time datetime="{{ post_three.published_date}}"> {{ post_three.published_date|timesince }} önce</time>
@@ -153,7 +153,7 @@
                                     <p style="color:#fff">{{post_two.text|safe|truncatewords:25 }}</p>
                                 </div>
                                 <div class="item-meta">
-                                    <a href="" class="author-image item-image" style="background-image: url('{% static 'images/user-photo.png' %}')"></a>
+                                    <a href="" class="author-image item-image" style="background-image: url('{% static 'images/user.jpg' %}')"></a>
                                     <a href="">{{ post_two.user }}</a> tarafından yazıldı
                                     <br>
                                     <time datetime="{{ post_two.published_date }}"> {{ post_two.published_date|timesince }} önce</time>
@@ -180,7 +180,7 @@
                                     <p>{{ post_one.text|safe|truncatewords:25 }}</p>
                                 </div>
                                 <div class="item-meta">
-                                    <a href="" class="author-image item-image" style="background-image: url('{% static 'images/user-photo.png' %}')"></a>
+                                    <a href="" class="author-image item-image" style="background-image: url('{% static 'images/user.jpg' %}')"></a>
                                     <a href="">{{ post_one.user }} </a> tarafından yazıldı
                                     <br>
                                     <time datetime="2{{ post_one.published_date }}">{{ post_one.published_date|timesince }} önce</time>
