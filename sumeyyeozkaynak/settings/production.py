@@ -1,7 +1,7 @@
 from sumeyyeozkaynak.settings.base import *
 
 DEBUG = False
-ALLOWED_HOSTS=['www.sumeyyeozkaynak.me', 'sumeyyeozkaynak.me','188.166.122.13']
+ALLOWED_HOSTS=['www.sumeyyeozkaynak.com', 'sumeyyeozkaynak.co','167.99.209.181']
 
 
 DATABASES = {
