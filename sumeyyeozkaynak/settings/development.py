@@ -1,6 +1,6 @@
 from sumeyyeozkaynak.settings.base import *
 DEBUG = True
-ALLOWED_HOSTS=[]
+ALLOWED_HOSTS=['167.99.209.181']
 
 DATABASES = {
     'default': {
