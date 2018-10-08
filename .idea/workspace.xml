@@ -46,8 +46,8 @@
       <find>https://alpha-demo.krownthemes.com/wp-content/uploads/2015/11/better-ico.png</find>
       <find>http://127.0.0.1:8000/</find>
       <find>https://alpha-demo.krownthemes.com</find>
-      <find>sumeyyeozkaynak.me</find>
-      <find>https://www.sumeyyeozkaynak.me</find>
+      <find>sumeyyeozkaynak.com</find>
+      <find>https://www.sumeyyeozkaynak.com</find>
       <find>background-color: #fff</find>
       <find>background-color:</find>
       <find>home-template</find>
@@ -69,7 +69,7 @@
       <replace>{% static 'images/SİYAHhakkimda.jpg' %}</replace>
       <replace>post</replace>
       <replace>{% static 'images/user-photo.png' %}</replace>
-      <replace>http://www.sumeyyeozkaynak.me</replace>
+      <replace>http://www.sumeyyeozkaynak.com</replace>
       <replace>https://docs.duckduckhack.com/</replace>
       <replace>https://docs.duckduckhack.com/g</replace>
       <replace>https://tutorial.djangogirls.org</replace>

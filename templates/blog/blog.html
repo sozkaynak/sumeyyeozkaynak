@@ -5,7 +5,7 @@
 {%block head-logo %}<small>Blog</small>{% endblock %}
 
 
-{% block sagblok0 %}<li class="home current-menu-item nav-mobile-item"><a href="http://www.sumeyyeozkaynak.me/blog">Blog</a></li>{% endblock %}
+{% block sagblok0 %}<li class="home current-menu-item nav-mobile-item"><a href="http://www.sumeyyeozkaynak.com/blog">Blog</a></li>{% endblock %}
 
 {% block content %}
 
@@ -19,8 +19,8 @@
             <div class="featured-post-label rotate">En Son</div>
             <h2><a href="{{ post_last.get_absolute_url }}">{{ post_last.title }}</a></h2>
             <div class="item-meta post">
-                <a href="http://www.sumeyyeozkaynak.me/hakkimda" class="author-image item-image" style="background-image: url('{% static 'images/user.jpg' %}')"></a>
-                <a href="http://www.sumeyyeozkaynak.me/hakkimda">{{ post_last.author }}</a>
+                <a href="http://www.sumeyyeozkaynak.com/hakkimda" class="author-image item-image" style="background-image: url('{% static 'images/user.jpg' %}')"></a>
+                <a href="http://www.sumeyyeozkaynak.com/hakkimda">{{ post_last.author }}</a>
                 <br>
                 <time datetime="2017-02-05"> Yayınlanma tarihi {{ post_last.published_date}}</time>
             </div>

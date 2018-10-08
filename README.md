@@ -1,2 +1,2 @@
 # sumeyyeozkaynak
-sumeyyeozkaynak.me is django project
+sumeyyeozkaynak.com is django project

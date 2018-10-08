@@ -1,5 +1,5 @@
 @echo off
-set "VIRTUAL_ENV=C:\Users\Win\Desktop\Python&Django Projects\sumeyyeozkaynak.me\venv"
+set "VIRTUAL_ENV=C:\Users\Win\Desktop\Python&Django Projects\sumeyyeozkaynak.com\venv"
 
 if not defined PROMPT (
     set "PROMPT=$P$G"
