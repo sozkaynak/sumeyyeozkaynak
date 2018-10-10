@@ -1551,7 +1551,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .maskee .slide.display {
-
+    display: block;
 }
 
 .maskee .media {
@@ -2685,7 +2685,7 @@ body.page-template-template-portfolio.opening:after {
 
 .krown-button.to-load:after {
     content: "";
-    display: block;
+
     position: absolute;
     top: -2px;
     left: -2px;
