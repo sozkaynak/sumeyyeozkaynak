@@ -1,4 +1,4 @@
-Django==1.11
+Django~=2.1.2
 django-autoslug==1.9.3
 django-ckeditor==5.5.0
 django-cleanup==2.1.0

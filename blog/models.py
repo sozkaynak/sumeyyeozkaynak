@@ -34,7 +34,7 @@ class Topic(models.Model):
 
 #Model Post 1.0 -> 2.0 için blog:views.py sayfasına gidiniz.
 class Post(models.Model):
-    user = models.ForeignKey('auth.User', verbose_name='Yazar',  related_name='posts')
+    user = models.ForeignKey('auth.User', verbose_name='Yazar',  related_name='posts', on_delete=models.CASCADE)
     title = models.CharField(max_length=200, verbose_name='Başlık')
     slug = models.SlugField(unique=True, max_length=210, verbose_name='Yazı Url', editable=False)
     text = RichTextField()

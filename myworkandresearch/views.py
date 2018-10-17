@@ -16,12 +16,12 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 # Create your views here.
 def myworkandresearch(request):
     categories = Category.objects.all()
-    subjects = Subject.objects.all()
+    subject = Subject.objects.order_by('-name')[:3]
 
     context={
         'categories': categories,
 
-        'subjects':subjects,
+        'subjects':subject,
     }
     return render(request, 'myworkandresearch/myworkandresearch.html', context)
 

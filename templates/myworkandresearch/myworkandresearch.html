@@ -28,7 +28,7 @@
                          {{category.name}}
                     </h1>
                     <div class="homepage__tagline">
-                        {{category.text|safe|linebreaksbr|truncatewords:50}}
+                        {{category.text|safe|linebreaksbr|truncatewords:35}}
                      </div>
                      <div class="homepage__button_row">
                          <a href="{% url 'myworkandresearch:category' category_slug=category.slug %}"  class="get-started-button">BAŞLA!</a> <!-- URL ekle -->
