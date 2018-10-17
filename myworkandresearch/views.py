@@ -16,12 +16,12 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 # Create your views here.
 def myworkandresearch(request):
     categories = Category.objects.all()
-    subject = Subject.objects.order_by('-name')[:3]
+    subject_list=Subject.objects.all()
+    subject=subject_list.all()[0:3]
 
     context={
         'categories': categories,
-
-        'subjects':subject,
+        'subject':subject,
     }
     return render(request, 'myworkandresearch/myworkandresearch.html', context)
 
@@ -38,7 +38,6 @@ def category(request,category_slug):
         comment.category = category
         comment.save()
         return HttpResponseRedirect(category.get_absolute_url())
-
 
     context = {
         'categories': categories,
