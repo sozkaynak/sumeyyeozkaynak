@@ -1,0 +1,12 @@
+<<<<<<< HEAD
+=======
+Django~=2.1.2
+django-autoslug==1.9.3
+django-ckeditor==5.5.0
+django-cleanup==2.1.0
+django-crispy-forms==1.7.2
+django-extensions==2.0.5
+django-js-asset==1.1.0
+django-recaptcha==1.4.0
+
+>>>>>>> c345db452bcf59133017ee1eca6888ed9f55369d

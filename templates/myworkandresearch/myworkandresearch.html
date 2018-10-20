@@ -28,22 +28,26 @@
                          {{category.name}}
                     </h1>
                     <div class="homepage__tagline">
-                        {{category.text|safe|linebreaksbr|truncatewords:50}}
+                        {{category.text|safe|linebreaksbr|truncatewords:30}}
                      </div>
                      <div class="homepage__button_row">
                          <a href="{% url 'myworkandresearch:category' category_slug=category.slug %}"  class="get-started-button">BAŞLA!</a> <!-- URL ekle -->
                      </div>
+            
+            
                      <div class="key-points">
-                    {% for subject in category.subject_set.all%}
+                      {% for subject in subject %}
+                        {% if subject in category.subject_set.all %}
                         <div class="homepage__key_point">
                                 <div class="homepage__key_point_title">{{subject.name}}</div>
-                                <p>{{subject.text|truncatewords:10|safe}}</p>
-                        </div>
-                    {% endfor %}
-                     </div>
+                                <p>{{subject.text|truncatewords:30|safe}}</p>
+                        </div>    
+                        {% endif %}             
+                      {% endfor %}
+                     </div>          
                  </section>
                 </article>
-            {% endfor %}
+                {% endfor %} 
           </div>
       </div>
       </div> <!-- /.row -->
