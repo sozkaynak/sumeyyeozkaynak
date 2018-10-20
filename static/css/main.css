@@ -323,10 +323,10 @@ input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus, .gs
   border-top: 1px solid #e8e8e8;
   padding-top: 30px;
   padding-bottom: 30px;
-  background: #0091ea;
-  color: white; }
+  background: #ffce02;
+  color: black; }
   .site-footer a {
-    color: white; }
+    color: #585656; }
   .site-footer__link-list {
     font-size: 14px;
     font-weight: 300; }
@@ -1619,7 +1619,7 @@ img.homepage__illustration--image {
   .homepage .contents a {
     text-decoration: none; }
   .homepage .contents h1 {
-    color: #0091ea;
+    color: #1876af;
     display: flex;
     flex-direction: row;
     align-items: center;
