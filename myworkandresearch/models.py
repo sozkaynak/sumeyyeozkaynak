@@ -52,7 +52,7 @@ class Subject(models.Model):
     slug = models.SlugField(unique=True, max_length=210, verbose_name='Konu Url', editable=False)
     text = RichTextField(verbose_name='Konu Metni')
 
-
+    
     category_name = models.ForeignKey('Category', on_delete=models.CASCADE, verbose_name='Kategori Adı')
 
     def __str__(self):
@@ -90,7 +90,7 @@ class SubjectComment(models.Model):
 
 class Article(models.Model):
 
-    user=models.ForeignKey('auth.User', verbose_name='Yazar', related_name='articles')
+    user=models.ForeignKey('auth.User', verbose_name='Yazar', related_name='articles',on_delete=models.CASCADE)
     title = models.CharField(max_length=200, verbose_name='Başlık')
     slug = models.SlugField(unique=True,max_length=210, verbose_name='Yazı Url', editable=False)
     text = RichTextField()
