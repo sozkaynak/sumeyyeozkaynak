@@ -44,8 +44,8 @@
                      <li class="divider"></li>  -->
                         
                         {% for category in categories%}
-                            {% for subject in category.subject_set.all %}
-                                <li class="chapter " data-level="1.1" data-path="../"><a href="{% url 'myworkandresearch:subject' category_slug=category.slug subject_slug=subject.slug %}" target="_blank" class="custom-link">{{subject.name}}</a>
+                            {% for subject in subjects %}  
+                            <li class="chapter " data-level="1.1" data-path="../"><a href="{% url 'myworkandresearch:subject' category_slug=category.slug subject_slug=subject.slug %}" target="_blank" class="custom-link">{{subject.name}}</a>
                             <ul class="articles">
                                 {% for article in subject.article_set.all %}
                                     <li class="chapter " data-level="1.1.1" data-path="../welcome/determining-ia-type.html"><a href="{% url 'myworkandresearch:detail' category_slug=category.slug subject_slug=subject.slug article_slug=article.slug %}">{{article.title}}</a></li>
